@@ -1,0 +1,6 @@
+/* select multiple element at the same time */
+/* usefull when we have to apply same property-value on different elements */
+h1,h2,p {
+    color: red;
+    font: 500;
+}

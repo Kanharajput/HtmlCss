@@ -1,0 +1,10 @@
+
+/* paragraphs have the red color */
+p{
+    color : red;
+}
+
+/* but css has the last rule property means lastly written code override the previous code */
+p{
+    color:green;
+}

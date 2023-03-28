@@ -1,0 +1,18 @@
+body {
+    /* there are some properties which are not inherited by children like */
+    /* here not every element have border around itself while the border is used to wrap all the elements which are inside the body */
+    border: 3px solid skyblue
+}
+
+
+/* all elements inside the div , now have the same color and bg */
+div {
+    color:white;
+    background: black;
+
+}
+
+/* but if apply heading a different color then it not inherit the parent color property  */
+h1{
+    color: red;
+}`

@@ -1,0 +1,21 @@
+/* class selector can have same value for different elements*/
+
+.green_heading {
+    color: green;
+}
+
+.red_heading {
+    color: red;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.gray_bg {
+    background: gray;
+}
+
+#change_font{
+    font-family: cursive;
+}

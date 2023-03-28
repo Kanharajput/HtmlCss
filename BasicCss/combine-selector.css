@@ -1,0 +1,12 @@
+/* why do we want to combine selectors */
+/* let say we only want to style paragraph inside div not the para which is outside */
+/* the simple solution is to assign an id to the div para */
+/* but it is not a good idea because when the project will be got bigger it will be tough to think for a good class or id name */
+
+.container p{
+    color : rgb(27, 143, 133);
+}
+
+.container h1{
+    color:rgb(130, 30, 155)
+}

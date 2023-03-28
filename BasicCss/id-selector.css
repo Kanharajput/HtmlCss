@@ -1,0 +1,12 @@
+/* select headings using id */
+/* two ids can't have the same value */
+
+#heading1 {
+    color: purple;
+    background: gray;
+}
+
+#heading2 {
+    color: brown;
+    background: yellowgreen;
+}

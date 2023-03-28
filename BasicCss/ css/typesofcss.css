@@ -1,0 +1,9 @@
+h3{
+    color:aqua;
+    font-weight: 100;
+    font-family: 'Trebuchet MS';  
+}
+
+/* power struggle */
+/* external stylesheet is override by internal stylesheet */
+/* internal stylesheet is override by inline styles */

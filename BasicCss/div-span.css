@@ -1,0 +1,23 @@
+/* with the help of div we applied color and background to both heading and paragraph */
+.kanha {
+    /* here color is applied to the text */
+    color:red;
+    background:black;
+}
+
+.tomar {
+    color:green;
+    background:yellow;
+}
+
+
+span{
+    text-transform: uppercase;
+    background: white;
+}
+
+/* span can also have classes */
+.change_bg{
+    background:aqua;
+
+}
