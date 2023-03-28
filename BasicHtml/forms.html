@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>This document is about form</h1>
+
+    <!-- id is used to link input with label -->
+    <form action="#" method="POST"> 
+        
+        <label for="username">Enter User Name</label>
+        <input type="text" id="username" name="username">
+
+        <br>
+        
+        <!-- no need of label when we are applying placeholder -->
+        <input type="email" name="email" placeholder="Email">
+
+        <br>
+
+        <input type="password" name="password" placeholder="Password">
+        
+        <br>
+
+        <!-- both work -->
+        <input type="submit" value="Submit">
+        <button type="submit">Submit</button>
+
+    </form>
+
+    <br>
+
+    <!-- single selection -->
+    <!-- here python is outside of the input tag -->
+    <input type="radio" name="fav_lang" value="Python">Python
+    <input type="radio" name="fav_lang" value="Java">Java
+    <input type="radio" name="fav_lang" value="C++">C++
+
+    <br>
+    <br>
+    
+    <!-- multiple selection of items -->
+    <input type="checkbox" name="fav_lang" value="Python" checked>Python
+    <input type="checkbox" name="fav_lang" value="Java">Java
+    <input type="checkbox" name="fav_lang" value="C++">C++
+
+    <br>
+    <br>
+
+    <!-- to select one item from a list of item -->
+    <select name="fav_lang">
+        <option value="Python">Python</option>
+        <option value="Java">Java</option>
+        <option value="C++">C++</option>
+    </select>
+</body>
+</html>
