@@ -1,0 +1,16 @@
+body {
+    background-color:rgba(163, 218, 210,0.2)
+}
+
+div {
+    background-color: white;
+}
+
+div h2 {
+    color: blue;
+}
+
+#special {
+    color: white;
+    background-color :black;
+}
