@@ -3,6 +3,12 @@ nowdays people are using background only at the place of background-color.
 But both has different meaning in backgound we can also pass image but in background-color we can't
 */
 
+/*css has 140 color names we can directly use them.
+but if you have to use more then that go for rgb colors
+rgb colors range between 0 to 255 for example 255,0,0 represent the red color
+*/
+
+
 #first {
     color:white;
     background-color: black;
@@ -18,3 +24,8 @@ But both has different meaning in backgound we can also pass image but in backgr
     color : green;
     background: url("/images/parachuting.jpg")
 }
+
+#forth {
+    color:rgb(79, 81, 189)
+}
+
