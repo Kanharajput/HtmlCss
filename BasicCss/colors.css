@@ -8,6 +8,9 @@ but if you have to use more then that go for rgb colors
 rgb colors range between 0 to 255 for example 255,0,0 represent the red color
 */
 
+/* rgba - it is used to add opacity with rgb colors. Heres a stands for alpha. It's value is between o and 1.
+*/
+
 
 #first {
     color:white;
@@ -29,3 +32,8 @@ rgb colors range between 0 to 255 for example 255,0,0 represent the red color
     color:rgb(79, 81, 189)
 }
 
+/* This rgba is used when we have two images or text over image and we need to lower down the opacity of background image */
+#fifth {
+    color:rgb(255,80,12);
+    background:rgba(255,200,10,0.5)
+}
