@@ -1,0 +1,20 @@
+/*
+nowdays people are using background only at the place of background-color. 
+But both has different meaning in backgound we can also pass image but in background-color we can't
+*/
+
+#first {
+    color:white;
+    background-color: black;
+}
+
+#second {
+    color :red;
+    background-color: yellow;
+}
+
+/*image as a background*/
+#third {
+    color : green;
+    background: url("/images/parachuting.jpg")
+}
