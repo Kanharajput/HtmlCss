@@ -26,3 +26,28 @@ here width 50% will be the the half of outer box width
     height: 50%;
     background:yellow;
 }
+
+/*
+em is also a relative units if element doesn't has any parent to take relate units then it takes from the browser.
+em = 16 browser default
+2em = 32px
+3em = 48px
+
+But it element contains parent then it em value from that 
+*/
+
+/*em without parent*/
+h2 {
+    font-size: 2em;
+}
+
+/*parent for the h3 heading*/
+/*I think it doesn't work with width and height*/
+.em-example {
+    font-size: 10px;
+}
+
+h3 {
+    font-size: 3em;
+}
+
