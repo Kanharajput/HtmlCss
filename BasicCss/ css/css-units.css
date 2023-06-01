@@ -59,3 +59,11 @@ html {
 p {
     font-size: 3rem;
 }
+
+/* vw stands for view width and vh stands for view height.
+Both these are dependent on the screen size not on the parent container. */
+.purple {
+    width:50vw;
+    height:50vh;
+    background:purple;
+}
