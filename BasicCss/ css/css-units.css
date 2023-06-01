@@ -51,3 +51,11 @@ h3 {
     font-size: 3em;
 }
 
+/*rem value can by determine by html tag and browser font size*/
+html {
+    font-size:10px;
+}
+
+p {
+    font-size: 3rem;
+}
