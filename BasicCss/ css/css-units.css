@@ -10,3 +10,19 @@ h1 {
     height: 200px;
     background: red;
 }
+
+#outer {
+    width:200px;
+    height:200px;
+    background:blueviolet;
+}
+
+/*
+percentage is a relative units 
+here width 50% will be the the half of outer box width 
+*/
+#inner {
+    width: 50%;
+    height: 50%;
+    background:yellow;
+}
