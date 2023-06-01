@@ -1,0 +1,20 @@
+/* remove the default attributes*/
+* {
+    margin:0px;
+    padding:0px;
+}
+
+nav {
+    background:pink;
+    width :100vw;
+    height:9rem;
+    font-size:3rem;
+    color:peru;
+}
+
+/* we don't want to scroll the page so we have to subtract the height which is utilised by nav*/
+.violetblue {
+    background:blueviolet;
+    width:100vw;
+    height:calc(100vh - 9rem);  /*subtract with any unit*/
+}
