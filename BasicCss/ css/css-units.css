@@ -1,0 +1,12 @@
+/*
+px = It set the element with fix size, not relative with screen size.
+width = It is used to set the width of element.
+font-size = It is only the size of written thing inside the element.
+*/
+
+h1 {
+    font-size: 20px;
+    width: 400px;
+    height: 200px;
+    background: red;
+}
