@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outline</title>
+    <style>
+        h1{
+            width:8rem;
+            color:white;
+            background:black;
+            padding:10px;
+            margin:50px;
+        }
+
+        .one{
+            outline:10px;
+            outline-color:red;
+            outline-width:5px;
+            outline-style:solid;
+            /* one thing that make it different from border is offset
+            using this we can set where to put line outside of inside the whole element */
+            outline-offset:5px;
+        }
+
+
+        .two{
+            /* to use outline offset draw border with outline */
+            padding:20px;
+            outline-width:5px;
+            outline-style:solid;
+            outline-color:yellow;
+            /* one thing that make it different from border is offset
+            using this we can set where to put line outside of inside the whole element */
+            outline-offset:-15px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="one">Kanha</h1>
+    <h1 class="two">Tomar</h1>
+</body>
+</html>
