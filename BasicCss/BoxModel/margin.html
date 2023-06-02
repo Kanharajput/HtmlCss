@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin</title>
+    <style>
+        /* margin is outside of the border
+            It is the distance between element and screen or element to element */
+            
+        *{
+            /* browser by default set margin, so remove it many times it affect what we want */
+            margin:0;
+        }
+
+        h1,p,h2{
+            background:green;
+            color:yellow;
+            margin:20px;
+        }
+
+        p{
+            /* not both margin are added and applied the highest margin is applied between the two elements */
+            background:blueviolet;
+            margin:30px 20px;
+        }
+
+        h2{
+            background:chocolate;
+            margin:30px 40px 50px 60px;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is all about margin in box model</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo dignissimos corrupti amet laudantium consequuntur itaque assumenda facilis natus perferendis velit.</p>
+    <h2>Understand</h2>
+</body>
+</html>
