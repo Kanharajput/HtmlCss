@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block Inline</title> 
+    <style>
+        /* by default ul is inline element
+        And inline element not support width-height and top-bottom margin by default
+         */
+
+         ul li{
+            list-style-type: none;
+         }
+
+         /* to support height-width and margin top-bottom margin
+         change display property to block */
+         ul li a{
+            width:100px;
+            height:20px;
+            color: white;
+            background:black;
+            text-decoration:none;
+            letter-spacing: 1.5px;
+            text-align:center;
+            display:block;
+            padding:5px;
+            margin-top: 5px;
+         }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#">home</a></li>
+        <li><a href="#">about</a></li>
+        <li><a href="#">contact</a></li>
+        <li><a href="#">details</a></li>
+    </ul>
+</body>
+</html>
