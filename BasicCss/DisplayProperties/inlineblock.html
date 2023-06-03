@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline Block</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        ul{
+            background:yellow;
+        }
+       ul li{
+        list-style: none;
+        display:inline;
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+       } 
+
+       ul li a{
+        text-decoration:none;
+        /* this is inline-block 
+        In inline-block we have all the properties of inline and also we are able to apply width-height and top-bottom margin */
+        display:inline-block;
+        width:90px;
+        height:20px;
+        margin:10px;
+        padding:10px;
+        background:black;
+        color:white;
+        text-align: center;
+       }
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Details</a></li>        
+    </ul>
+</body>
+</html>
