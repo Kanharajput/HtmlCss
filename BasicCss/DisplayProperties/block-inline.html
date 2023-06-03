@@ -12,7 +12,12 @@
             background:blue;
             color:white;
             /* we can convert a block element into inline */
-            display:inline;
+            /* display:inline; */
+            /* to center block element one need to specify width of the element
+            as it span to full width of the element. text-align only center the content it have not the whole element*/
+            width:300px;
+            margin:30px auto;     
+            /* set top margin as you want and left-right to auto to center element */
         }
         
         /* inline will not take the whole line. It only spread as much the as the content
@@ -22,7 +27,13 @@
             color:white;
             text-decoration:none;
             /* convert it to block */
-            display:block;
+            /* display:block; */
+        }
+
+        /* to center inline element we need to do align-center in parent of inline element
+        here parent is body so  */
+        body{
+            text-align:center;
         }
     </style>
 </head>
