@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block Inline</title>
+    <style>
+        /*  block will take the whole line 
+        And always starts with a new line */
+        .block{
+            background:blue;
+            color:white;
+            /* we can convert a block element into inline */
+            display:inline;
+        }
+        
+        /* inline will not take the whole line. It only spread as much the as the content
+        And also not start with a new line */
+        .inline{
+            background:red;
+            color:white;
+            text-decoration:none;
+            /* convert it to block */
+            display:block;
+        }
+    </style>
+</head>
+<body>
+    <div class="block">Div is block element</div>
+    <h1 class="block">Heading is also a block element</h1>
+    <p class="block">Paragraph is also a block element</p>
+
+    <span class="inline">Span is an inline element.</span>
+    <img src="/images/parachuting.jpg" alt="parachuting"  class="inline">
+    <a href="https://www.kanharajput.pythonanywhere.com" class="inline">Pythonanywhere</a>
+</body>
+</html>
