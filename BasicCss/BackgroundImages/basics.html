@@ -11,6 +11,9 @@
 
         /* to cover the whole div size we have some properties named 
         cover and contain */
+
+        /* to center in the image in div use 
+        background-position property */
         div{
             height:300px;   
         }
@@ -22,6 +25,8 @@
             but if the image is small in size then it will stretch and lower down the quality of image
              */
             background-size:cover;
+            background-position:center;
+            
         }
 
         .second{
@@ -29,7 +34,8 @@
             /* use below property to off the repeat */
             background:url(images/small.jpeg);
             background-repeat: no-repeat;
-
+            /* also pass variable values  */
+            background-position:20% 50%;
         }
 
         .third{
