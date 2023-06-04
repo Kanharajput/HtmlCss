@@ -14,35 +14,45 @@
 
         /* to center in the image in div use 
         background-position property */
-        div{
-            height:300px;   
+
+        /* background-attachment has two options fixed and scroll
+        -> scroll = scroll the content with text
+        -> fixed = bg-img not scroll, it remains there only content is scrolled 
+        by default scroll is set */
+        *{
+            margin: 0;
+            padding:0;
+            box-sizing:border-box;
         }
 
+        div{
+            height:100vh;     
+        }
+        /* background properties are not applying through div
+        we have to set them separetly in each class */
+
         .first{
-            background:url(images/big.jpeg);
-            background-repeat:no-repeat;
-            /* this will gonna cover the whole div 
-            but if the image is small in size then it will stretch and lower down the quality of image
-             */
+            background:url(images/big.jpeg); 
+            background-position: center;
             background-size:cover;
-            background-position:center;
-            
+            background-repeat:no-repeat;  
+            background-attachment: fixed;
         }
 
         .second{
-            /* image is smaller than div so it repeated */
-            /* use below property to off the repeat */
-            background:url(images/small.jpeg);
-            background-repeat: no-repeat;
-            /* also pass variable values  */
-            background-position:20% 50%;
+            background:url(images/kanha.jpg);
+            background-size:cover;
+            background-repeat:no-repeat;
+            background-position:bottom;
+            background-attachment: fixed;
         }
 
         .third{
             background:url(images/folder-img.jpeg);
-            background-repeat: no-repeat;
-            /* respect the ratio of image. Not change them , not try to fill the div by stretching */
-            background-size: contain;
+            background-position: center;
+            background-size:cover;
+            background-repeat:no-repeat;   
+            background-attachment: fixed;
         }
     </style>
 </head>
