@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linear Gradient</title>
+    <style>
+        div{
+            width:300px;
+            height: 300px;
+            margin:5px;
+        }
+
+        /* run this code you will understand what is linear gradient descent */
+        .one{
+            background:linear-gradient(red,green)
+        }
+
+        .two{
+            background:linear-gradient(to top, red,green,blue);
+        }
+
+        .three{
+            background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.9))
+        }
+
+        .four{
+            background:linear-gradient(45deg,green, pink,yellow)
+        }
+        
+        /* only 10% solid yellow */
+        .five{
+            background:linear-gradient(yellow 10%, purple);
+        }
+
+        .six{
+            background:linear-gradient(to top left, violet,green);
+        }
+    </style>
+</head>
+<body>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+    <div class="four"></div>
+    <div class="five"></div>
+    <div class="six"></div>
+</body>
+</html>
