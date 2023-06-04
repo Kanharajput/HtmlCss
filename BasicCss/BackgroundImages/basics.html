@@ -15,6 +15,8 @@
         /* to center in the image in div use 
         background-position property */
 
+        /* colorzilla gradient editor  https://www.colorzilla.com/gradient-editor */
+        
         /* background-attachment has two options fixed and scroll
         -> scroll = scroll the content with text
         -> fixed = bg-img not scroll, it remains there only content is scrolled 
@@ -32,7 +34,8 @@
         we have to set them separetly in each class */
 
         .first{
-            background:url(images/big.jpeg); 
+            /* gradient descent to make text visible over image */
+            background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(images/big.jpeg); 
             background-position: center;
             background-size:cover;
             background-repeat:no-repeat;  
@@ -40,19 +43,21 @@
         }
 
         .second{
-            background:url(images/kanha.jpg);
-            background-size:cover;
+            background:url(images/kanha.jpg) bottom/cover no-repeat fixed;
+            /* background-size:cover;
             background-repeat:no-repeat;
             background-position:bottom;
-            background-attachment: fixed;
+            background-attachment: fixed; */
         }
 
         .third{
-            background:url(images/folder-img.jpeg);
-            background-position: center;
+            /* shorthand to define position size repeat and attachment */
+            background:url(images/folder-img.jpeg) center/cover no-repeat fixed;
+
+            /* background-position: center;
             background-size:cover;
             background-repeat:no-repeat;   
-            background-attachment: fixed;
+            background-attachment: fixed; */
         }
     </style>
 </head>
