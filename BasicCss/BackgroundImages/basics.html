@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Background Images</title>
     <style>
+        /* by default background images have the property that if the
+        image size is smaller than the div then repeat the image again and again to fill it. */
         div{
             height:300px;   
         }
@@ -14,7 +16,11 @@
         }
 
         .second{
+            /* image is smaller than div so it repeated */
+            /* use below property to off the repeat */
             background:url(images/small.jpeg);
+            background-repeat: no-repeat;
+
         }
 
         .third{
