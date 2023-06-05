@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo elements</title>
+    <style>
+        /* this is passed by css not by the html */
+        h1::before{
+            content:"Hey ";
+            color:white;
+            background:red;
+        }
+
+        /* developer option only show that their is content as it is passed from the html */
+        h1::after{
+            content:" Bye";
+            color:white;
+            background:red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hi I am Kanha Tomar</h1>
+</body>
+</html>
