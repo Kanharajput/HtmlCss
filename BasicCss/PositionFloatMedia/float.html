@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float</title>
+    <style>
+        .card{
+            border:yellow 2px solid;
+            padding:5px;
+        }
+        img{
+            /* this will set the image on left side of the page and start paragraph on the write of image */
+            float:left;
+            padding:5px;
+        }
+
+        p{
+            /* this will remove the float property 
+            confirm it must be in same direction as float element */
+            clear:left;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="/images/parachuting.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus beatae architecto pariatur inventore voluptatem provident at obcaecati voluptates harum. Possimus totam error sit qui eum fugiat omnis eveniet facere voluptates. Consequuntur placeat reprehenderit dolor laborum deserunt fugiat sint optio quidem!</p>
+    </div>
+</body>
+</html>
