@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Monomaniac+One&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+        @import url('https://fonts.googleapis.com/css2 family=Caveat:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: 'Monomaniac One', sans-serif;
+        }
+
+        .nav-bar{
+            background:black;
+            color:white;
+            padding:10px;
+            padding-left:50px;
+            text-transform: uppercase;
+            font-size: 1.5rem;
+            letter-spacing: 1.3px;
+        }
+
+        ul li{
+            list-style: none;
+        }
+
+        .bg-img{
+            /* check the height of nav bar through inspect */
+            min-height:calc(100vh - 38px);
+            background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(images/hero-bcg.jpg);
+            background-position:center;
+            background-size:cover;
+            background-repeat: no-repeat;
+            color:white;
+        }
+
+        .bg-img h2{
+            padding-top: 5rem;
+            padding-left: 5rem;
+            font-family: 'Oswald', sans-serif;
+            font-size: 1.5rem;
+        }
+
+        .bg-img p{
+            padding-left: 5rem;
+            width:50%;
+            font-family: 'Caveat', cursive;
+            font-weight:bold;
+            line-height: 1.2;
+            
+        }
+
+        .bg-img button{
+            margin-top:1rem;
+            margin-left:5rem;
+            background:transparent;
+            color:white;
+            font-family: 'Rajdhani', sans-serif;
+            font-size:2rem;
+            text-transform:uppercase;
+            border: 1px white solid;
+            padding:2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-bar">
+        <ul>
+            <li>Kofi</li>
+        </ul>
+    </div>
+
+    <div class="bg-img">
+        <h2>Coffee Market</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio, molestiae quibusdam. Repellendus quidem iure dicta vel molestiae quisquam, architecto reprehenderit.</p>
+        <button>explore more</button>
+    </div>
+</body>
+</html>
