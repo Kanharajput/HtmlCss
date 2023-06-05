@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float</title>
+    <style>
+        /* we are going to create columns using this */
+        div{
+            height:20rem;
+            /* equally divide the width to all four divs */
+            width:25%;
+            float:left;
+        }
+        .one{
+            background:red;
+        }
+
+        .two{
+            background:yellow;
+        }
+
+        .three{
+            background:blue;
+        }
+
+        .four{
+            background:purple;
+        }
+
+        /* always set clear for following element of float because
+        if there's some space remain then it will gonna use that space  */
+        h2{
+            clear:left;
+        }
+    </style>
+</head>
+<body>
+    <div class="one">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi tempore voluptates consequuntur odit dolor officiis harum illum, nihil enim tenetur!</p>
+    </div>
+    <div class="two">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi tempore voluptates consequuntur odit dolor officiis harum illum, nihil enim tenetur!</p>
+    </div> 
+    <div class="three">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi tempore voluptates consequuntur odit dolor officiis harum illum, nihil enim tenetur!</p>
+    </div>
+    <div class="four">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi tempore voluptates consequuntur odit dolor officiis harum illum, nihil enim tenetur!</p>
+    </div>
+
+    <h2>Kanha Tomar</h2>
+</body>
+</html>
