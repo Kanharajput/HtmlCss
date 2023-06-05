@@ -6,13 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Position</title>
     <style>
-
         /* 
         This is static positioning 
         this normal flow of elements. */
 
         /*relative position
         shifting element from it's normal position */
+
+        /* absolute position 
+        set element to closet relative parent element
+        by default body is the relative element */
+
+        /* difference between absolute and relative
+        empty space is not filled when element is set to relative
+        empty space is filled when element is set to absolute */
+
         div{
             border:2px red solid;
         }
@@ -20,7 +28,6 @@
         .one{
             background:yellow;
             color:black;
-            /* set it relative, now left 30px will shift it 30px away from it's normal left.*/
             position:relative;
             left:30px;
         }
@@ -33,6 +40,10 @@
         .special{
             background:pink;
             color:black;
+            /* no element is set to relative that'swhy it is set relative to body */
+            position:absolute;
+            top:0;
+            left:0;
         }
     </style>
 </head>
