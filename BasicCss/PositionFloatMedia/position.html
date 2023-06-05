@@ -23,6 +23,15 @@
 
         /* fixed position
         remains fixed not slide out */
+
+        .nav{
+            background:red;
+            width:100%;
+            position:sticky;
+            /* this top is used like top margin when the element is scrolled to top */
+            top:0;
+        }
+
         .one{
             background:yellow;
             color:black;
@@ -49,27 +58,19 @@
             height:200vw;
             background:blue;
         }
-        
-        .nav{
-            background:red;
-            width:100%;
-            position:fixed;
-            top:0;
-            left:0;
-        }
 
     </style>
 </head>
 <body>
-    <div class="nav">
-        Navigation
-    </div>
     <div>
         <p class="one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero odit itaque perferendis maxime excepturi, modi mollitia odio similique deleniti quaerat.</p>
         <p class="two">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi fugit eveniet animi non eius doloribus ipsum quisquam explicabo culpa eligendi? <span class="special">Absolute</span></p>
     </div>
+    <div class="nav">
+        Navigation
+    </div>
     <div class="forscroll">
-
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni distinctio assumenda vel iste cupiditate error molestias, sunt unde excepturi eveniet in quis dolorum ducimus. Eligendi dolorum possimus ex debitis animi, asperiores porro obcaecati deserunt. Non maiores quibusdam fugit quas facilis dolor sequi blanditiis tenetur suscipit. Quasi saepe laudantium aliquam facilis mollitia tenetur deleniti suscipit aperiam harum sint vitae id, sapiente molestias ea, ex veniam error fugiat nesciunt dolorem ipsa? Ad, nesciunt! Eos, facere! Deserunt mollitia blanditiis ipsam delectus velit esse architecto. Facilis laborum obcaecati, temporibus quaerat possimus nam labore ratione. Nam reiciendis ullam sint corporis sequi, nulla quaerat earum officiis.</p>
     </div>
 </body>
 </html>
