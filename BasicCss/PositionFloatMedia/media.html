@@ -8,8 +8,10 @@
     <style>
         /* media queries are used to make changes according to different screen sizes
         In short create dynamic page 
-        min-height = start from
-        max-height = upto */
+        min-width = start from
+        max-width = upto */
+
+        /* in max-width case this apply after 768px */
         .first{
             height:100vh;
             background:yellow;
@@ -17,21 +19,25 @@
             text-transform: capitalize;
             padding:50px;
         }
-
-        /* when screen size is 576px or more then below code applied */
-        @media screen and (min-width:576px){
-            .first{
-                background:red;
-            }
-        }
-
-        /* when screen size is 768px or more then below code applied */
-        @media screen and (min-width:768px){
+        
+        /* "working with max-width then write in this serial greater width to lower then only it will work" 
+        And if working with min-width then write smaller to greater width.*/
+        
+        /* when screen size is less than 768px and greater than 576px then below code is applied */
+        @media screen and (max-width:768px){
             .first{
                 background:purple;
                 color:white;
             }
         }
+
+        /* when screen size is less than 576px or less then below code is applied */
+        @media screen and (max-width:576px){
+            .first{
+                background:red;
+            }
+        }
+       
     </style>
 </head>
 <body>
