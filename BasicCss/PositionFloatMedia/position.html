@@ -21,14 +21,13 @@
         empty space is not filled when element is set to relative
         empty space is filled when element is set to absolute */
 
-        div{
-            border:2px red solid;
-        }
-
+        /* fixed position
+        remains fixed not slide out */
         .one{
             background:yellow;
             color:black;
             position:relative;
+            margin-top:50px;
             left:30px;
         }
 
@@ -43,14 +42,34 @@
             /* no element is set to relative that'swhy it is set relative to body */
             position:absolute;
             top:0;
+            right:0;
+        }
+
+        .forscroll{
+            height:200vw;
+            background:blue;
+        }
+        
+        .nav{
+            background:red;
+            width:100%;
+            position:fixed;
+            top:0;
             left:0;
         }
+
     </style>
 </head>
 <body>
+    <div class="nav">
+        Navigation
+    </div>
     <div>
         <p class="one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero odit itaque perferendis maxime excepturi, modi mollitia odio similique deleniti quaerat.</p>
         <p class="two">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi fugit eveniet animi non eius doloribus ipsum quisquam explicabo culpa eligendi? <span class="special">Absolute</span></p>
+    </div>
+    <div class="forscroll">
+
     </div>
 </body>
 </html>
