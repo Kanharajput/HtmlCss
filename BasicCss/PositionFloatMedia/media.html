@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+    <style>
+        /* media queries are used to make changes according to different screen sizes
+        In short create dynamic page 
+        min-height = start from
+        max-height = upto */
+        .first{
+            height:100vh;
+            background:yellow;
+            text-align:center;
+            text-transform: capitalize;
+            padding:50px;
+        }
+
+        /* when screen size is 576px or more then below code applied */
+        @media screen and (min-width:576px){
+            .first{
+                background:red;
+            }
+        }
+
+        /* when screen size is 768px or more then below code applied */
+        @media screen and (min-width:768px){
+            .first{
+                background:purple;
+                color:white;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="first">
+        <h2>kanha tomar Nam hai mera. Tu bata kya kam hai tera.</h2>
+    </div>
+</body>
+</html>
