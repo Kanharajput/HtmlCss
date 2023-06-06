@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>After and Before</title>
+</head>
+<style>
+    /* remember pseudo elements won't work with images */
+    .banner{
+        width:40vw;
+        margin:100px auto;
+        border:2px red solid;
+        position:relative;
+    }
+
+    img{
+        width:100%;
+        display:block;
+    }
+
+    div::before{
+        content:"";
+        border:2px gray solid;
+        width:100%;
+        height:100%;
+        position:absolute;
+        box-sizing:border-box;
+        top:-35px;
+        left:-35px;
+        z-index:-1;
+    }
+
+    div::after{
+        content:"";
+        width:100%;
+        height:100%;
+        background:gray;
+        border:2px gray solid;
+        box-sizing:border-box;
+        display:block;
+        position:absolute;
+        top:-20px;
+        left:-20px;
+        z-index:-2;
+    }
+</style>
+<body>
+    <div class="banner">
+        <img src="/BasicCss/BackgroundImages/images/big.jpeg" alt="">
+    </div>
+</body>
+</html>
