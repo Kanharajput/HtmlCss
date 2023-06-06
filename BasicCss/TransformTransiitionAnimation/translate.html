@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>translate</title>
+    <style>
+        /* it directly move the block without any padding or margin */
+        div{
+            width:200px;
+            height:200px;
+            display:inline-block;
+        }
+
+        .one{
+            background:red;
+            /* translate will move the block on x and y axis */
+            transform:translateX(50px);
+        }
+        .two{
+            background:blue;
+            /* move 50px x and 100px y */
+            transform:translate(50px,100px);
+        }
+        .three{
+            background:green;
+        }
+    </style>
+</head>
+<body>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+</body>
+</html>
