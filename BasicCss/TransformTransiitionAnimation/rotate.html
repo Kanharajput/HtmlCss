@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotate</title>
+    <style>
+        /* rotate is used to rotate the element*/
+        div{
+            width:200px;
+            height:200px;
+            display:inline-block;
+        }
+
+        .one{
+            background:red;
+            /* rotate to 30deg */
+            transform:rotateX(20deg);
+        }
+        .two{
+            background:blue;
+            /* rotate on both direction */
+            transform:rotate(20deg);
+        }
+        .three{
+            background:green;
+            /* rotate on z */
+            transform:rotateZ(49deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+</body>
+</html>
