@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        /* transition is the period of changing from one state to another */
+
+        *{
+            margin:0;
+            padding:0;
+        }
+        div{
+            width:200px;
+            height:200px;
+            display:inline-block;
+        }
+
+        /* change bg color when hover over them */
+        div:hover{
+            background:coral;
+        }
+
+        .two:hover{
+            border-radius:50%;
+        }
+
+        .one{
+            background:red;
+            /* start transition after 2s */
+            transition-delay:2s;
+        }
+        .two{
+            border:2px yellow solid;
+            background:blue;
+            position:relative;
+            height:200px;
+            /* applying transition 
+            use the same property name on which we have to apply transition */
+            /* border-radius will take 2s to apply */
+            /* transition-property: background, border-radius;
+            transition-duration:4s, 2s;  */
+            /* shorthand for the above code */
+            
+            /* second value is the time delay */
+            transition:background 4s 2s, border-radius 2s; 
+            /* transition : all 4s 2s 
+            easiest way to write transition*/
+        }
+
+        .three{
+            background:green;
+        }
+    </style>
+</head>
+<body>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+</body>
+</html>
