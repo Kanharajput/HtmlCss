@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HSL</title>
+    <style>
+        .box{
+            width:100px;
+            height:100px;
+            border : 2px solid orange;
+            margin:5px;
+        }
+
+        /* here hsl represent h=hue , s=saturation, l=lightness 
+        s = 0% tends to gray color  s=100% is full color
+        l = 0% black and 100% is white*/
+        /* we can use this value to create website with just depend on one color which is right on happening in modern websites */
+        .box-1{
+            background:hsl(0,100%,50%);
+        }
+
+        .box-2{
+            background:hsl(120,100%,50%);
+        }
+
+        .box-3{
+            background:hsl(180,20%,30%);
+        }
+
+        .box-4{
+            background:hsl(240,80%,50%);
+        }
+
+        .box-5{
+            background:hsl(300,80%,70%);
+        }
+    </style>
+</head>
+<body>
+    <!-- emment abbreviation .box.box-$*5 -->
+    <div class="box box-1"></div>
+    <div class="box box-2"></div>
+    <div class="box box-3"></div>
+    <div class="box box-4"></div>
+    <div class="box box-5"></div>
+</body>
+</html>
