@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        div{
+            width:200px;
+            height:100px;
+            color:white;
+            margin:10px;
+        }
+
+        .transition:hover{
+            transform:translateX(50px);
+            background:rgb(231, 125, 142);
+        }
+
+        .transition{
+            background:red;
+            transition:all 1s linear;
+        }
+
+        .animation:hover{
+            animation-name:move;
+            /* this time is divide in 0%,, 50% etc */
+            animation-duration:5s;  
+            animation-iteration-count: 2;
+        }
+
+        .animation{
+            background:yellow;
+        }
+
+        @keyframes move{
+            /* here 0% 50% 75% 100% show the time percentage */
+            0%{
+                transform:translateX(20px);
+            }
+
+            50%{
+                transform:translateX(100px);
+                background:blue;
+            }
+
+            75%{
+                transform:translateX(-200px)
+            }
+
+            100%{
+                transform:translateX(0px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="transition">
+        Transition
+    </div>
+
+    <div class="animation">
+        Animation
+    </div>
+</body>
+</html>
