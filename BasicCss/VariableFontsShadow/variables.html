@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Variables</title>
+    <style>
+        /* variable declaration format
+        --varName:value
+        property : var(--varName);
+
+        scope 
+        :root() === global
+        element === local
+        */
+
+        /* global declare the color */
+        :root{
+            --primaryColor : yellow;
+            --textSize : 1.3rem;
+        }
+
+        /* local variable */
+        .local{
+            --textColor:red;
+        }
+
+        h2{
+            /* only applied to local block h2 */
+            color:var(--textColor);
+        }
+
+        p{
+            color:var(--primaryColor);
+            font-size:var(--textSize);
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <h2>Kanha Tomar</h2>
+        <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab laudantium nobis delectus in atque error expedita consectetur debitis cupiditate voluptate!</p>
+    </div>
+
+    <div class="local">
+        <h2>Kanha Rajput</h2>
+        <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas voluptatum assumenda earum. Qui sapiente non commodi, nobis ab est corrupti.</p>
+    </div>
+</body>
+</html>
