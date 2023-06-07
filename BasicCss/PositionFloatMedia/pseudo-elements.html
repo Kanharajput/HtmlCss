@@ -24,15 +24,31 @@
         :is(section,div) h2:hover{
             color:blueviolet;
         }
+
+        /* only select the h2 and p */
+        section :is(h2,p){
+            color:green;
+        }
+
+        /* applied color to all but not the p */
+        nav :not(p){
+            color:blue;
+        }
+
     </style>
 </head>
 <body>
     <h1>Hi I am Kanha Tomar</h1>
     <section>
         <h2>Kanha Tomar</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, dignissimos?</p>
+        <h3>Kanha Darbar</h3>
     </section>
+
     <nav>
         <h2>Kanha Rajput</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, iste!</p>
+        <h3>Kanha Darbar</h3>
     </nav>
     <div>
         <h2>Kanha Tomar</h2>
