@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Position Project</title>
-</head>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Monomaniac+One&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
@@ -42,19 +41,22 @@
         background:#6F4E37;
         padding-top:45%;
     }
+
+    .content h2,p{
+        text-align:center;
+        color:white;
+        animation-name:top-to-center;
+        animation-duration:5s;
+    }
     
     .content h2{
-        color:white;
         text-transform: capitalize;
-        text-align:center;
         margin-bottom:10px;
         font-family: 'Oswald', sans-serif;
     }
 
     .content p{
-        color:white;
         letter-spacing: .1rem;
-        text-align:center;
         font-family: 'Caveat', cursive;
         margin-bottom: 10px;
     }
@@ -69,6 +71,8 @@
         padding:5px;
         text-transform: uppercase;
         border:rgba(255, 255, 255, 0.5) 2px solid;
+        /* add animation */
+        animation : bottom-to-center 5s;
     }
 
     .redbox{
@@ -76,25 +80,53 @@
         background:red;
     }
 
-/* design for large screen */
-@media screen and (min-width:576px) {
-    .content{
-        padding-top:20%;
-        background:linear-gradient(to right, rgba(153, 80, 51, 0.486),rgba(92, 49, 32, 0.932)),url(/BasicCss/BackgroundImages/images/hero-bcg.jpg);
-        background-repeat: no-repeat;
-        background-size:cover;
-        background-position:center;
+    /* refresh to see the animation */
+    /* animation for coming head paragraph from top and button from bottom */
+    @keyframes top-to-center{
+        0%{
+            transform:translateY(-300px);
+            opacity:0;
+        }
+
+        100%{
+            transform:translateY(0px);
+            opacity:1;
+        }
+
     }
 
-    .content p{
-        width:700px;
-        display:block;
-        margin:10px auto;
+    /* take button from down to center */
+    @keyframes bottom-to-center{
+        0%{
+            transform:translateY(300px);
+            opacity:0;
+        }
+
+        100%{
+            transform:translateY(0px);
+            opacity:1;
+        }
+
     }
-}
 
+    /* design for large screen */
+    @media screen and (min-width:576px) {
+        .content{
+            padding-top:20%;
+            background:linear-gradient(to right, rgba(153, 80, 51, 0.486),rgba(92, 49, 32, 0.932)),url(/BasicCss/BackgroundImages/images/hero-bcg.jpg);
+            background-repeat: no-repeat;
+            background-size:cover;
+            background-position:center;
+        }
 
-</style>
+        .content p{
+            width:700px;
+            display:block;
+            margin:10px auto;
+        }
+    }
+    </style>
+</head>
 <body>
     <div class="banner">
         <div class="nav">
