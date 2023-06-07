@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        /* transition-timing function is the way transition take 
+        place  
+        ease = default
+        ease = slow start, fast ,slow end
+        linear = same speed of start and end
+        ease-in = slow start
+        ease-out = slow end
+        ease-in-out = slow start, fast, and slow end 
+        */
+
+        *{
+            margin:0;
+            padding:0;
+        }
+        div{
+            width:100px;
+            height:100px;
+            margin:10px;
+        }
+
+        div:hover{
+            transform:translateX(30px);
+        }
+        .one{
+            background:red;
+            transition-property: transform;
+            transition-duration: 2s;
+            transition-delay:1s;
+        }
+
+        .two{
+            background:red;
+            /* here 
+            all = property on which transition is applied
+            2s = duration
+            1s = delay
+            ease = transition-timin-function */
+            transition:all 0.5s ease;
+        }
+
+        .three{
+            background:red;
+            transition:all 0.5s linear;
+        }
+
+        .four{
+            background:red;
+            transition:all 0.5s ease-in;
+        }
+
+        .five{
+            background:red;
+            transition:all 0.5s ease-out;
+        }
+
+        .six{
+            background:red;
+            transition:all 0.5s ease-in-out;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="one">default</div>
+    <div class="two">ease</div>
+    <div class="three">linear</div>
+    <div class="four">ease-in</div>
+    <div class="five">ease-out</div>
+    <div class="six">ease-in-out</div>
+</body>
+</html>
