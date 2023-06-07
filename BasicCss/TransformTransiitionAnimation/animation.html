@@ -34,6 +34,46 @@
             background:yellow;
         }
 
+        .animation1:hover{
+            animation-name:for-animation1;
+            animation-duration:5s;
+            /* backwards save changes which are done at 100%
+            if forwards applied changes made at 100% are not applied */
+            animation-fill-mode: backwards;
+
+            /* css last rule will apply this . Shorthand to write animation */
+            animation: for-animation1 5s forwards;
+        }
+
+        .animation1{
+            background:pink;
+            opacity:0.2;
+            color:black;
+        }
+        
+        @keyframes for-animation1{
+            0%{
+                transform:translateX(20px);
+            }
+
+            50%{
+                transform:translateX(100px);
+                background:red;
+                opacity:0.5;
+            }
+
+            75%{
+                transform:translateX(-200px);
+                opacity:0.7;
+            }
+
+            100%{
+                transform:translateX(0px);
+                opacity:1;
+                color:white;    
+            }
+        }
+
         @keyframes move{
             /* here 0% 50% 75% 100% show the time percentage */
             0%{
@@ -62,6 +102,10 @@
 
     <div class="animation">
         Animation
+    </div>
+
+    <div class="animation1">
+        Animation fill mode and shorthand to write it.
     </div>
 </body>
 </html>
