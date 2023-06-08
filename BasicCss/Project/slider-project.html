@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/BasicCss/Icons/fontawesome-free-6.4.0-web/css/all.css">
+    <title>Project</title>
+    <style>
+        *{
+            margin:0;
+        }
+
+        :root{
+            --primary:rgb(130, 26, 228);
+            --primary-dark:#3c3799;
+            --gray-light:#e7ecf1;
+            --gray:#9ba3ad;
+            --gray-dark:#122655;
+            --fluid-width: 90vw;
+            --max-width:400px;
+            --black: #222;
+            --white: #fff;
+            --letter-spacing: 2px;
+            --text-size: 20px;
+            --border-radius: 10px;
+            --shadow-light: 0 5px rgba(0,0,0,0.1);
+            --shadow-dark: 0 5px 15px rgba(0,0,0,0.2);
+            --transition: 0.3s ease-in-out all;
+        }
+
+        body{
+            background: var(--gray-light)
+        }
+
+        header{
+            margin-top:5rem;
+            margin-bottom:2rem;
+            text-align: center;
+            color:black;
+        }
+
+        .slider{
+            width:var(--fluid-width);
+            max-width:var(--max-width);
+            margin:20px auto;
+        }
+
+        .box{
+            background:var(--white);
+            margin-bottom: 15px;
+            border:var(--border-radius) solid rgba(255, 255, 255, 0.884);
+        }
+
+        img{
+            width:100%;
+            height:200px;
+            display:block;
+            object-fit:cover;
+        }
+
+        .box h4{
+            color: var(--primary);
+            letter-spacing: var(--letter-spacing);
+        }
+
+        .icon{
+            color:var(--primary);
+            font-size: var(--text-size)
+        }
+
+        a{
+            color:var(--primary-dark);
+            text-decoration:underline;
+            background:transparent;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Latest Blogs</h1>
+    </header>
+
+    <section class="slider">
+        <div class="box">
+            <img src="/BasicCss/BackgroundImages/images/hero-bcg.jpg" alt="music">
+            <h4>Lifestyle <span> <i class="fa-solid fa-mug-hot icon"></i></span></h4>
+            <h3>Seven Reasons Why Coffee is Awesome</h3>
+            <p>Lorem ipsum dolor sit amet lorem consectetur adipisicing elit. Aliquid, magni.</p>
+            <a href="#">Read More</a>
+        </div>
+
+        <div class="box">
+            <img src="/BasicCss/BackgroundImages/images/fashion.jpg" alt="again-music">
+            <h4>Fashion <span><i class="fa-solid fa-hat-cowboy icon"></i></span></h4>
+            <h3>Why black remains always in fashion</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, magni.</p>
+            <a href="#">Read More</a>
+        </div>
+    </section>
+</body>
+</html>
