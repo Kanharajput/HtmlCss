@@ -20,6 +20,7 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
+    /* border:2px red solid; */
 }
 
 body{
@@ -93,6 +94,7 @@ p{
     }
 }
 
+
 /* global button styles */
 .btn{
     background: var(--clr-primary-light);
@@ -102,7 +104,9 @@ p{
     font-weight: 700;
 }
 
-/* style the header */
+/* style the header
+
+*/
 header{
     height:100vh;
     background:linear-gradient(to right,rgba(14, 10, 10, 0.6),rgba(14, 10, 10,0.8)),url(../images/main-bcg.jpeg);
@@ -149,3 +153,53 @@ header{
     background:linear-gradient(to right,var(--clr-primary),yellow, var(--clr-primary));
 }
 /* end of content divider */
+
+/* 
+====================
+Skills
+====================
+*/
+.skills-section{
+    padding-top:40px;
+    background: var(--clr-gray-10);
+    text-align:center;
+}
+
+.skill-box{
+    padding: 40px 0;
+    transition: var(--transition);
+
+}
+
+.skill-box:hover{
+    background: var(--clr-white);
+    border-bottom: 2px solid var(--clr-primary);
+    box-shadow: 0 2px var(--clr-primary);
+}
+
+/* add transition to both element which are chaged when hover. */
+.skill-box .icon{
+    display:block;
+    font-size:2.5rem;
+    color: var(--clr-primary);
+    padding-bottom: 10px;
+    transition: var(--transition);
+}
+
+/* set the behaviour of icon when hover over skill-box */
+.skill-box:hover .icon{
+    transform: translateY(-10px);
+}
+
+.skill-title{
+    color: var(--clr-primary);
+    font-weight:400;
+}
+
+.skill-text{
+    width:300px;
+    color: var(--clr-gray-5);
+    margin:0 auto;
+}
+
+/* end fo skills section */
