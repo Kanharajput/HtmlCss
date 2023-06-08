@@ -142,3 +142,10 @@ header{
     outline-offset: 2px;
 }
 /* end of header styles */
+
+/* styles of content divider */
+.content-divider{
+    height:5px;
+    background:linear-gradient(to right,var(--clr-primary),yellow, var(--clr-primary));
+}
+/* end of content divider */
