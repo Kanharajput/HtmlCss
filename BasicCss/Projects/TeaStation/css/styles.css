@@ -253,7 +253,7 @@ END OF SKILLS STYLE
 
 /* 
 =======================
-About Skills
+About
 ========================
 */
 
@@ -264,7 +264,7 @@ About Skills
     background: var(--clr-white);
 }
 
-.content .img-container{
+.content .about-img-container{
     /* width:450px; */
     max-width:30rem;
     border:0.5rem solid var(--clr-primary);
@@ -312,7 +312,7 @@ About Skills
 }
 
 @media screen and (min-width:992px){
-    .img-container, .info {
+    .content .about-img-container, .info {
         float:left;
         width:50%;
     }
@@ -328,4 +328,125 @@ About Skills
     .info .title-1{
         margin-top:0;
     }
+}
+
+/* 
+=======================
+End of About
+========================
+*/
+
+/* 
+=======================
+Products section
+========================
+*/
+
+/* design inventory */
+.product-section{
+    background: var(--clr-gray-10);
+}
+
+.products{
+    width:85vw;
+    margin: 0 auto;
+    padding:4rem 0;
+    max-width:1170px;
+}
+
+.product-data .title-1{
+    color: var(--clr-primary);
+    font-family: var(--ff-secondary);
+}
+
+.product-data .title-2{
+    color: var(--clr-black);
+    font-weight: 300;
+    margin-bottom:2rem;
+}
+
+.product-data .text{
+    color: var(--clr-gray-5);
+    margin-bottom:2rem;
+    max-width:26rem;
+}
+
+.product-data .product-btn{
+    padding: 0.75rem 1rem;
+    color: var(--clr-white);
+    font-weight: 300;
+}
+
+.product-data{
+    margin-bottom: 2rem;
+}
+/*end of inventory */
+
+/* style of items */
+
+.product-img-container img{
+    border-radius: var(--radius);
+    height: 17rem;
+    object-fit:cover;
+}
+
+.item-title-price .item-title{
+    font-weight:300;
+    font-size:0.75rem;
+    color: var(--clr-gray-1);
+    margin-top:30px;
+}
+
+
+.item-title-price .item-price{
+    font-family: var(--ff-secondary);
+    color: var(--clr-gray-1);
+    letter-spacing: 0.25rem;
+}
+
+
+@media screen and (min-width:768px) {
+
+    .item-data{
+        width:50%;
+        float:left;
+        margin-top:2rem;
+        padding-right:20px;
+    }
+
+}
+
+/* three items in the same line */
+@media screen and (min-width: 992px) {
+    .item-data {
+      width: 33.3%;
+    }
+
+    .products {
+        width: 95vw;
+        padding: 4rem 1rem;
+      }
+}
+
+/* all three times with inventory in the same line */
+@media screen and (min-width:1200px) {
+
+    .products{
+        padding-bottom: 4rem;
+    }
+
+    .product-data{
+        float:left;
+        width:30%;
+    }
+
+    .items{
+        float:left;
+        width:70%;
+    }
+
+    .item-data{
+        margin-top:0;
+    }
+
 }
