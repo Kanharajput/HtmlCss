@@ -101,7 +101,7 @@ p{
 
 /* global button styles */
 .btn{
-    background: var(--clr-primary-light);
+    background: var(--clr-primary);
     color: var(--clr-black);
     text-transform: uppercase;
     letter-spacing: var(--spacing);
@@ -250,3 +250,82 @@ SKILLS STYLES
 END OF SKILLS STYLE
 ========================
 */
+
+/* 
+=======================
+About Skills
+========================
+*/
+
+.about-section{
+    width:85vw;
+    margin:70px auto;
+    max-width: 1170px;
+    background: var(--clr-white);
+}
+
+.content .img-container{
+    /* width:450px; */
+    max-width:30rem;
+    border:0.5rem solid var(--clr-primary);
+    /* not hide the element when out of box at a time of hovering */
+    overflow:hidden;
+}
+
+.content .title-1{
+    margin-top: 60px;
+    max-width:26rem;
+    font-family: var(--ff-secondary);
+    color: var(--clr-primary);
+}
+
+.content .title-2{
+    font-family: var(--ff-primary);
+    font-weight: 300;
+    margin-bottom:40px;
+}
+
+.content .text{
+    color: var(--clr-gray-5);
+    font-size: 0.8rem;
+    padding-bottom: 10px;
+}
+
+.content .info{
+    max-width:24rem;
+}
+
+.content .about-btn{
+    padding:0.75rem;
+    color: var(--clr-white);
+    font-weight: 300;
+}
+
+.content img{
+    background: var(--clr-primary);
+    transition : var(--transition);
+}
+
+.content img:hover{
+    opacity: 0.5;
+    transform :scale(1.2);
+}
+
+@media screen and (min-width:992px){
+    .img-container, .info {
+        float:left;
+        width:50%;
+    }
+
+    .info{
+        margin-left:6rem;
+    }
+
+    .about-section{
+        width:95vw;
+    }
+
+    .info .title-1{
+        margin-top:0;
+    }
+}
