@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Catamaran:400,700|Grand+Hotel");
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;300;500&family=Grand+Hotel&display=swap');
 
 /* variales */
 
@@ -6,7 +6,7 @@
     --clr-primary:#678e3e;
     --clr-primary-light:#beed8c;
     --clr-gray-1:#102a42;
-    --clr-gray-5:#627d98;
+    --clr-gray-5:#617d98;
     --clr-gray-10:#f1f5f8;
     --clr-white:#fff;
     --clr-black: #000;
@@ -518,6 +518,7 @@ so do it manually */
     position:absolute;
     left:50%;
     bottom:0;
+    /* here this -50% and 50% are the icon size */
     transform: translate(-50%,50%);
     /* design it */
     font-size:2rem;
@@ -568,3 +569,108 @@ so do it manually */
         margin-right:3.33%;
     }
 }
+
+/* 
+=======================
+End of Service section
+========================
+*/
+
+/* 
+=======================
+Contact section
+========================
+*/
+
+/* site owner details */
+.contact-section{
+    background: var(--clr-gray-10);
+}
+
+.contact-section-center{
+    width: 85%;
+    margin: 4rem auto;
+    padding:4rem 0;
+    max-width:1170px;
+}
+
+.contact-details{
+    margin-bottom:2rem;
+}
+
+.contact-item h4{
+    color: var(--clr-primary);
+    font-weight:300;
+}
+
+.contact-item p{
+    text-transform:uppercase;
+    letter-spacing:0.2rem;
+    color : var(--clr-gray-5);
+}
+
+/* end of site owner details */
+
+/* design for user response */
+.contact-us{
+    background:var(--clr-white);
+    border-radius:10px;
+    max-width: 35rem;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+    transition: var(--transition);
+}
+
+.contact-us:hover{
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+}
+
+.contact-us h3{
+    font-weight:100;
+    text-align:center;
+    color: var(--clr-gray-5);
+    padding-top:1rem;
+}
+
+.form-group .form-field{
+    /* widht 90% because we have to give 10% to margin */
+    width:90%;
+    background: var(--clr-gray-10);
+    color: var(--clr-gray-5);
+    text-transform: uppercase;
+    padding:10px;
+    margin: 1rem 5% 1rem 5%;
+    border-radius: 5px;
+    letter-spacing: 0.3rem;
+    border:none;
+}
+
+/* by default button is an inline-block elment in some browser */
+.form-btn{
+    width:100%;
+    padding:15px;
+    color: var(--clr-white);
+    font-size:0.9rem;
+    margin-top:2rem;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+    transition: var(--transition);
+}
+
+.form-btn:hover{
+    background: var(--clr-primary-light);
+    color: var(--clr-primary);
+}
+
+
+@media screen and (min-width:992px){
+    .contact-details, .contact-us{
+        float:left;
+        width:50%;
+    }
+}
+/* 
+=======================
+End of Service section
+========================
+*/
+

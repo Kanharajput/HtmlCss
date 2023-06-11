@@ -82,7 +82,7 @@
     </section>
     <!-- about section -->
 
-    <!-- always apply clearfix to the parent element of the floated element -->
+    <!-- always apply clearfix to the parent element of the floated element Otherwise the parent height will collapse-->
     <!-- product section -->
     <section class="product-section">
       <article class="products clearfix">
@@ -191,6 +191,60 @@
       </article>
     </section>
     <!-- end of services section -->
+
+    <!-- CONTACT SECTION -->
+    <section class="contact-section">
+      <article class="contact-section-center clearfix">
+        <!-- site owner details -->
+        <article class="contact-details">
+          <!-- contact itelm 1 -->
+          <div class="contact-item">
+            <h4>
+              <span class="contact-item-icon">
+                <i class="fas fa-location-arrow"></i>
+              </span>
+              Address
+            </h4>
+            <p>Opposite to Panchayat <br>
+              Bada Barda Manawar</p>
+          </div>
+          <!-- contact item 2 -->
+          <div class="contact-item">
+            <h4>
+              <span class="contact-item-icon">
+                <i class="fas fa-envelope"></i>
+              </span>
+              Email
+            </h4>
+            <p>kanharajput@gmail.com</p>
+          </div>
+          <!-- contact item 3 -->
+          <div class="contact-item">
+            <h4>
+              <span class="contact-item-icon">
+                <i class="fas fa-phone"></i>
+              </span>
+              Telephone
+            </h4>
+            <p>+91 8719805774</p>
+          </div>
+        </article>
+        <!-- end of site owner details -->
+        <!-- taking response from user -->
+        <article class="contact-us">
+          <h3>Contact Us</h3>
+          <form action="#">
+            <div class="form-group">
+              <input type="text" class="form-field" placeholder="Name" name="name" />
+              <input type="email" class="form-field" placeholder="Email" name="email" />
+              <textarea class="form-field" placeholder="Message" rows="5" name="message"></textarea>
+            </div>
+            <button type="submit" class="btn form-btn">submit here</button>
+          </form>
+        </article>
+      </article>
+    </section>
+    <!-- END OF CONTACT SECTION -->
     <script src="app.js"></script>
   </body>
 </html>
