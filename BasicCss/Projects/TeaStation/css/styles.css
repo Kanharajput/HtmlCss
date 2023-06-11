@@ -123,6 +123,93 @@ END OF GLOBAL STYLES
 ========================
  */
 
+ /* 
+=======================
+NAV STYLES
+========================
+ */
+.nav-btn{
+    position:fixed;
+    top: 5%;
+    left: 5%;
+    font-size:2rem;
+    color: var(--clr-primary);
+    z-index: 1; 
+    cursor:pointer;
+}
+
+/* style navbar */
+.navbar{
+    position: fixed;
+    /* stretch the navbar to full width and height */
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background: var(--clr-gray-10);
+    /* greater z-index has high priority to get on top */
+    z-index:2;
+    box-shadow: 2px 0 2px rgba(0,0,0,0.2);
+}
+
+.showNav{
+
+}
+
+/* setting close icon to right */
+.navbar-header{
+    text-align:right;
+    padding-right: 1rem;
+}
+
+/* style the close icon */
+.nav-close{
+    font-size:2.5rem;
+    color: #f29c9c;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.nav-close:hover{
+    color: #bb2525;
+}
+
+/* remove the bullets */
+.nav-items{
+    list-style-type: none;
+}
+
+.nav-link{
+    display:block;
+    font-size:1.5rem;
+    text-transform: uppercase;
+    padding:0.25rem 1rem;
+    letter-spacing: var(--spacing);
+    color: var(--clr-gray-5);
+    transition: var(--transition);
+}
+
+.nav-link:hover{
+    background: var(--clr-primary-light);
+    color: var(--clr-primary);
+    padding-left: 1.25rem;
+    border-left: 0.25rem solid var(--clr-primary);
+}
+
+/* make it small for large screen as for small screen it is taking the whole width and height */
+@media screen and (min-width:768px) {
+    .navbar{
+        width: 30vw;
+        max-width:20rem;
+    }
+}
+
+/* 
+=======================
+END OF NAV STYLES
+========================
+ */
+
 /* 
 =======================
 HEADER STYLES
