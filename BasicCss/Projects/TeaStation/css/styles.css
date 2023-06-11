@@ -150,10 +150,16 @@ NAV STYLES
     /* greater z-index has high priority to get on top */
     z-index:2;
     box-shadow: 2px 0 2px rgba(0,0,0,0.2);
+    /*hide navbar by setting it to -100% left */
+    transform: translateX(-100%);
+    transition: var(--transition);
 }
 
+/* this class will show the navbar
+Basically navbar is translated to -100% on x axis when user click on navbar button javascript listen this event and add showNav class to navbar and this class will translate navbar back to display */
+/* app.js has the code to add and remove this class */
 .showNav{
-
+    transform: translate(0);
 }
 
 /* setting close icon to right */
