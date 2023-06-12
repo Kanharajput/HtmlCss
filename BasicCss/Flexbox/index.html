@@ -25,8 +25,8 @@
         /* justify content horizontal alignment 
         flext-start(default) flex-end center 
         */
-        justify-content: flex-end;
         justify-content: center;
+        justify-content: flex-end;
         /* starting and ending item has less margin than middle items */
         justify-content: space-around;
         /* leftmost and rightmost item are set to borders and middle items has */
@@ -62,6 +62,18 @@
         align-content: center;
       }
 
+      h2{
+        margin-top:100px;
+        color:blue;
+      }
+      .image-container{
+        height:500px;
+        margin-top: 50px;
+        background:url(/images/main-axis&cross-axis.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
     </style>
   </head>
   <body>
@@ -71,11 +83,23 @@
       <div class="box box-3">3</div>
       <div class="box box-4">4</div>
       <div class="box box-5">5</div>
-      <div class="box box-p">6</div>
+      <!-- <div class="box box-p">6</div>
       <div class="box box-p">7</div>
       <div class="box box-p">8</div>
       <div class="box box-p">9</div>
-      <div class="box box-p">10</div>
+      <div class="box box-p">10</div> -->
+    </div>
+
+
+    <div class="container-1">
+      <div class="about-main-cross">
+        <h2>Image to show the main axis and cross axis</h2>
+        <p>when the flex direction is row then <br>
+        justify-content will used to horizontally center the data and align-item is used to vertically center the data <br> But when the flex direction is column then <br> justify-content is used to vertically center the data and align-item is used to horizontally center the data</p>
+        <div class="image-container">
+
+        </div>
+      </div>
     </div>
   </body>
 </html>
