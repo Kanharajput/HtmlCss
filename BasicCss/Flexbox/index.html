@@ -16,11 +16,23 @@
         display:flex;
         /* flex has the direction in which items are settled */
         /* by defualt it is set to row and has options like row-reverse, column and column-reverse  */
-        flex-direction: row-reverse;    
+        flex-direction: row;    
         /* wrap property by default set to nowrap which let the container slide when
         there's not enaugh space remains for the items
         wrap property can also has the value wrap and wrap-reverse  */
         flex-wrap: wrap;
+
+        /* justify content horizontal alignment 
+        flext-start(default) flex-end center 
+        */
+        justify-content: flex-end;
+        justify-content: center;
+        /* starting and ending item has less margin than middle items */
+        justify-content: space-around;
+        /* leftmost and rightmost item are set to borders and middle items has */
+        justify-content: space-between;
+        /* distribute space to all items evenly */
+        justify-content: space-evenly;
       }
 
     </style>
@@ -32,11 +44,11 @@
       <div class="box box-3">3</div>
       <div class="box box-4">4</div>
       <div class="box box-5">5</div>
-      <div class="box box-p">6</div>
+      <!-- <div class="box box-p">6</div>
       <div class="box box-p">7</div>
       <div class="box box-p">8</div>
       <div class="box box-p">9</div>
-      <div class="box box-p">10</div>
+      <div class="box box-p">10</div> -->
     </div>
   </body>
 </html>
