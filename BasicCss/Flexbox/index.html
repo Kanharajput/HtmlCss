@@ -43,11 +43,23 @@
         /* bottom of the container */
         align-items: flex-end;
         /* center of the container */
-        align-items: center;
+        /* align-items: center; */
         /* this property is usefull when one of the item is large in size
         then it will align the items using the largest item bottom
         it is useful when setting logo to navbar */
-        align-items: baseline;
+        /* align-items: baseline; */
+        
+        /* used for vertical alignment */
+        /* align-content will used to apply property on both the rows
+        in other properties only the last row show the properties when the content is wrap */
+        align-content: flex-end;
+        align-content: flex-start;
+        align-content:baseline;
+        align-content: stretch;
+        align-content: space-evenly;
+        align-content: space-around;
+        align-content: space-between;
+        align-content: center;
       }
 
     </style>
@@ -59,11 +71,11 @@
       <div class="box box-3">3</div>
       <div class="box box-4">4</div>
       <div class="box box-5">5</div>
-      <!-- <div class="box box-p">6</div>
+      <div class="box box-p">6</div>
       <div class="box box-p">7</div>
       <div class="box box-p">8</div>
       <div class="box box-p">9</div>
-      <div class="box box-p">10</div> -->
+      <div class="box box-p">10</div>
     </div>
   </body>
 </html>
