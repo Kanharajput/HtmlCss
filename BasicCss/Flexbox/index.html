@@ -47,19 +47,19 @@
         /* this property is usefull when one of the item is large in size
         then it will align the items using the largest item bottom
         it is useful when setting logo to navbar */
-        /* align-items: baseline; */
+        align-items: baseline;
         
         /* used for vertical alignment */
         /* align-content will used to apply property on both the rows
         in other properties only the last row show the properties when the content is wrap */
-        align-content: flex-end;
-        align-content: flex-start;
-        align-content:baseline;
-        align-content: stretch;
-        align-content: space-evenly;
-        align-content: space-around;
-        align-content: space-between;
-        align-content: center;
+        /* align-content: flex-end; */
+        /* align-content: flex-start; */
+        /* align-content: stretch; */
+        /* align-content: space-evenly; */
+        /* align-content: space-around; */
+        /* align-content: space-between; */
+        /* align-content:baseline; */
+        /* align-content: center; */
       }
 
       h2{
@@ -91,7 +91,22 @@
         order:-1;
       }
 
-      
+      /* align-self
+        elements inside container can have their own properties irregular of the properties applied by container
+      */
+      /* remove align-content otherwise it won't work */
+
+      .box-1{
+        align-self: flex-end;
+      }
+
+      .box-5{
+        align-self: stretch;
+      }
+
+      .box-3{
+        align-self: center;
+      } 
     </style>
   </head>
   <body>
