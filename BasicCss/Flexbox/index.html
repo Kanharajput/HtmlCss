@@ -66,6 +66,7 @@
         margin-top:100px;
         color:blue;
       }
+
       .image-container{
         height:500px;
         margin-top: 50px;
@@ -74,6 +75,23 @@
         background-position: center;
         background-size: cover;
       }
+
+      /* 
+      ============>>> ALL ABOVE PROPERTY ALL FOR THE CONTAINER WHICH HAS FLEX AS DISPLAY.
+
+      ==============>>> BELOW PROPERTY ARE FOR THE CHILD OF THE FLEX
+      /* order peroperty used to order the boxes inside the container
+      by default all has the order value 0 low value element will come first than the higher one */
+
+      .box-1{
+        order:1
+      }
+
+      .box-5{
+        order:-1;
+      }
+
+      
     </style>
   </head>
   <body>
