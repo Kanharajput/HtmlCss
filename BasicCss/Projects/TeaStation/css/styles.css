@@ -136,6 +136,7 @@ NAV STYLES
     color: var(--clr-primary);
     z-index: 1; 
     cursor:pointer;
+    animation: bounce 2s ease infinite;
 }
 
 /* style navbar */
@@ -228,6 +229,8 @@ header{
     background-position:center;
     background-size:cover;
     position:relative;
+    /* at a time of animation screen size increase to hide use below code */
+    overflow-x: hidden;
 }
 
 .banner{
@@ -243,12 +246,14 @@ header{
 .banner h2{
     font-family: var(--ff-secondary);
     color: var(--clr-primary);
+    animation: left-to-center 5s ease;
 }
 
 .banner h1{
     color: var(--clr-white);
     text-transform: uppercase;
     letter-spacing: var(--spacing);
+    animation: right-to-center 5s ease;
 
 }
 
@@ -258,6 +263,7 @@ header{
     display:inline-block;
     outline:2px var(--clr-primary) solid;
     outline-offset: 2px;
+    animation: btn-large-small 5s linear;
 }
 /* 
 =======================
@@ -809,4 +815,107 @@ FOOTER
 =======================
 End of FOOTER
 ========================
+*/
+
+/* 
+==============================
+ANIMATION 
+===============================
+*/
+
+/* animation for nav button */
+@keyframes bounce{
+    0%{
+        transform:scale(1);
+        opacity:0;
+    }
+
+    50%{
+        transform:scale(2);
+        opacity:0.5;
+    }
+
+    100%{
+        transform:scale(1);
+        opacity:1;
+    }
+}
+
+/* animation for banner headings */
+@keyframes right-to-center{
+    0%{
+        transform: translateX(500%);
+        opacity:0;
+    }
+
+    50%{
+        transform: translateX(-200px);
+        opacity: 0.5;
+    }
+    
+    75%{
+        transform: translateX(100px);
+        opacity: 0.75;
+    }
+
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes left-to-center{
+    0%{
+        transform: translateX(-500%);
+        opacity:0;
+    }
+
+    50%{
+        transform: translateX(200px);
+        opacity: 0.5;
+    }
+    
+    75%{
+        transform: translateX(-100px);
+        opacity: 0.75;
+    }
+
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* animation for banner button */
+@keyframes btn-large-small{
+    0%{
+        opacity: 0;
+    }
+
+
+    25%{
+        opacity: 0.25;
+        transform: scale(1.5);
+    }
+
+    50%{
+        opacity: 0.50;
+        transform: scale(2)
+    }
+
+    75%{
+        opacity: 0.75;
+        transform: scale(1.5);
+    }
+
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* 
+==============================
+END OF ANIMATION 
+===============================
 */
