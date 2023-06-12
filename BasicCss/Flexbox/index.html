@@ -33,6 +33,21 @@
         justify-content: space-between;
         /* distribute space to all items evenly */
         justify-content: space-evenly;
+
+        /* vertically align the content to center usign align-items*/
+        /* stretch (default) flex-start flex-end center */
+        height:400px;
+        align-items: stretch;
+        /* top of the container */
+        align-items: flex-start;
+        /* bottom of the container */
+        align-items: flex-end;
+        /* center of the container */
+        align-items: center;
+        /* this property is usefull when one of the item is large in size
+        then it will align the items using the largest item bottom
+        it is useful when setting logo to navbar */
+        align-items: baseline;
       }
 
     </style>
