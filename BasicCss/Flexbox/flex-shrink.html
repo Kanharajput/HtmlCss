@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-shrink</title>
+    <style>
+        .container{
+            display:flex;
+            width:300px;
+            margin:0 auto;
+            /* not wrap then they only they shrink otherwise they change the row and totally fit no need to shrink */
+            /* flex-wrap: wrap; */
+            flex-direction: row;
+            border: 2px yellow solid;
+        }
+        .box{
+            display:flex;
+            text-align: center;
+            /* not use padding left right it affects the actual size of the boxes otherwise border-box */
+            padding:30px 0;
+        }
+
+        .box-1 {
+            background: #581f18;
+        }
+        .box-2 {
+            background: #f0a202;
+        }
+        .box-3 {
+            background: #d95d39;
+        }
+        .box-4 {
+            background: #202c59;
+        }
+        .box-5 {
+            background: #51cb20;
+        }
+
+        .box-6 {
+            background: #458b97;
+        }
+        .box-7 {
+            background: #8e45d3;
+        }
+        .box-8 {
+            background: #db7bcb;
+        }
+
+        /* flex-shrink default set to 1 means when not enough space shrink
+         */
+        .box{
+            /* no box shrink if container has not enough space they overflow */
+            flex-shrink:0;
+        }
+
+        .box-2{
+            /* now it is set to one means it will shrink when not enough space
+            but shrink relatively to other items if other items has more shrink value they shrink more.*/
+            width:300px;
+            flex-shrinK:1;
+        }
+
+        /* now there's no space to fully fit inside the container thats'why they shrinking according to their width. 
+        ALSO MORE THE VALUE MORE THE ITEM IS SHRINKED */
+        .box-3{
+            /* now it is set to one means if not enough space then also it
+            will not shrink. it maintain it's full width that is 300px */
+            width:100px;
+            flex-shrink:2;
+        }
+
+        .box-1{
+            /* this box not have any width means it's fully shrinked can't shrink any more that'swhy no effect shown */
+            flex-shrink:2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+      <div class="box box-1">1</div>
+      <div class="box box-2">2</div>
+      <div class="box box-3">3</div>
+      <div class="box box-4">4</div>
+      <div class="box box-5">5</div>
+      <div class="box box-6">6</div>
+      <!-- <div class="box box-7">7</div> -->
+      <!-- <div class="box box-8">8</div> -->
+    </div>
+</body>
+</html>
