@@ -4,18 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>flex-grow</title>
+    <title>flex-basis $ flex shortcut</title>
     <style>
+        *{
+            box-sizing: border-box;
+        }
         .container{
             display:flex;
-            flex-wrap: wrap;
+            /* flex-wrap: wrap; */
             flex-direction: row;
             border: 2px yellow solid;
         }
         .box{
             text-align: center;
-            padding:30px;
-            background:red;
+            padding:30px 0;
+            /* minimum width of the box.*/
+            flex-basis: 100px;
+            /* below is the shortcut to write grow shrink and basis
+            first is the grow second is shrink and last one is the basis */
+            flex: 0 1 200px;
         }
 
         .box-1 {
@@ -33,21 +40,6 @@
             .box-5 {
             background: #51cb20;
         }
-
-
-        /* so flex-grow is used to fill up the empty space inside the container.
-        seen to be effective only when there's some empty space otherwise no effect is shown 
-        default value = 0 
-        if all boxes set to 1 then all boxes share equal proportion of the empty space
-        and if all boxes has flex-grow=1 and one spacific has flex-grow=2 then this specific block size is nearly twice then the other blocks*/
-
-        .box{
-            flex-grow:1;
-        }
-
-        .box-2{
-            flex-grow:2;
-        }
     </style>
 </head>
 <body>
@@ -57,6 +49,8 @@
       <div class="box box-3">3</div>
       <div class="box box-4">4</div>
       <div class="box box-5">5</div>
+      <div class="box box-5">6</div>
+      <div class="box box-5">7</div>
     </div>
 </body>
 </html>
