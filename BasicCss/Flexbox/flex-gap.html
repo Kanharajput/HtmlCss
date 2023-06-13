@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex gap</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        nav{
+            background:pink;
+            display:flex;
+            justify-content: space-between;
+        }
+        h2{
+            color:green;
+            font-size: 2rem;
+        }
+
+        ul{
+            list-style-type: none;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        .nav-items{
+            display:flex;
+            /* here we can't use margin and justify-content to put margin between. */
+            /* this gap property's first value denote margin for rows and second value denote margin for columns */
+            gap: 0 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <h2>LOGO</h2>
+        <ul class="nav-items">
+            <li class="nav-links"><a href="#">home</a></li>
+            <li class="nav-links"><a href="#">about</a></li>
+            <li class="nav-links"><a href="#">contact</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
