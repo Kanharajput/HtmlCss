@@ -11,33 +11,40 @@
         }
         .container{
             display:flex;
-            /* flex-wrap: wrap; */
+            flex-wrap: wrap;
             flex-direction: row;
             border: 2px yellow solid;
+            justify-content: space-between;
         }
         .box{
             text-align: center;
             padding:30px 0;
             /* minimum width of the box.*/
             flex-basis: 100px;
-            /* below is the shortcut to write grow shrink and basis
-            first is the grow second is shrink and last one is the basis */
+            /* below is the shortcut to write grow shrink and basis */
             flex: 0 1 200px;
+            /* create column layout*/
+            flex: 0 0 calc(25%);
+            /* get the margin from the boxes */
+            /* here 1rem is margin which is right now only at the end */
+            flex: 0 0 calc(25% - 1rem);
+            /* distribute this margin to each box*/
+            /* using justify-content: space-between -> set it in container */
         }
 
         .box-1 {
             background: #581f18;
-            }
-            .box-2 {
+        }
+        .box-2 {
             background: #f0a202;
-            }
-            .box-3 {
+        }
+        .box-3 {
             background: #d95d39;
-            }
-            .box-4 {
+        }
+        .box-4 {
             background: #202c59;
-            }
-            .box-5 {
+        }
+        .box-5 {
             background: #51cb20;
         }
     </style>
@@ -48,9 +55,6 @@
       <div class="box box-2">2</div>
       <div class="box box-3">3</div>
       <div class="box box-4">4</div>
-      <div class="box box-5">5</div>
-      <div class="box box-5">6</div>
-      <div class="box box-5">7</div>
     </div>
 </body>
 </html>
