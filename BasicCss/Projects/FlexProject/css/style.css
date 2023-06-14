@@ -301,6 +301,65 @@ About Styles
   }
 }
 
+/*
+=============== 
+End of About Styles
+===============
+*/
+
+.services-section{
+  margin: 4rem 0;
+  background: var(--clr-grey-10);
+}
+
+.service-section-center{
+  width: 85vw;
+  margin: 4rem auto;
+  text-align: center;
+  padding:4rem 0;
+
+}
+
+.service-heading span {
+  color: var(--clr-primary-5);
+}
+
+.service{
+  max-width: 25rem;
+  padding:2rem;
+  margin: 0 auto;
+}
+
+
+.service-info p{
+  font-size: 1rem;
+}
+
+.service-info{
+  margin-top: 2rem;
+}
+
+.service-heading{
+  margin-bottom:3rem;
+}
+
+.all-services .service-icon{
+  background: var(--clr-primary-5);
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+@media screen and (min-width: 500px){
+  .all-services{
+    display: flex;
+    flex-wrap: wrap;
+    /* here we don't need to add flex-basis as we manually set max-width for service */
+  }
+}
+
+
+
+
 
 
 
