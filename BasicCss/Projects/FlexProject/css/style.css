@@ -12,6 +12,8 @@ Variables
 */
 
 :root {
+  /* get this color shade from bootstrap site copy the original color # value
+  and put in color shade generator to get the shades of that color */
   /* dark shades of primary color*/
   --clr-primary-1: hsl(184, 91%, 17%);
   --clr-primary-2: hsl(185, 84%, 25%);
