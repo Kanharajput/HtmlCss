@@ -125,8 +125,110 @@ p {
   color: var(--clr-primary-1);
   background: var(--clr-primary-8);
 }
+/*
+=============== 
+End of Global Styles
+===============
+*/
 
+/*
+=============== 
+Banner Styles
+===============
+*/
 
-h1{
-  color:black;
+header{
+  height:100vh;
+  background: var(--clr-primary-5);
+  color: var(--clr-white);
+  /* center the content */
+  display: flex;
+  /* this will center the content inside the block */
+  text-align: center;
+  /* this will center the whole block on page*/
+  justify-content: center;
+  align-items: center;
 }
+
+.text h1{
+  text-transform: uppercase;
+}
+
+.text p{
+  max-width: 75%;
+  /* center */
+  margin: 0 auto;
+  margin-bottom:2rem;
+  color: var(--clr-white);
+  letter-spacing: var(--spacing);
+}
+
+.banner-btn{
+  background: var(--clr-white);
+  color: var(--clr-primary-5);
+  padding:1.25rem;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  border: 0.15rem solid  var(--clr-white);
+  transition: var(--transition);
+}
+
+.banner-btn:hover{
+  background:transparent;
+}
+
+/* set backgournd image when screen size is greater than 800px */
+
+@media screen and (min-width:768px){
+  header{
+    background: linear-gradient(rgba(59, 207, 218, 0.5),rgba(0,0,0, 0.7)),url(/BasicCss/Projects/FlexProject/images/main.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
