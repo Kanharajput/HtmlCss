@@ -482,7 +482,6 @@ Tour Styles
 
 @media screen and (min-width: 992px){
   .tours{
-    border: 2px green solid;
     display:flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -503,18 +502,57 @@ Tour Styles
   }
 }
 
+/* 
+===============
+END OF TOUR
+===============
+ */
+/* 
+=================
+START OF CONTACT
+==================
+ */
+.contact-section{
+  background: var(--clr-primary-5);
+  margin-bottom: 4rem;
+}
 
+.contact-center{
+  margin-left: 1.5rem;
+  padding: 4rem 0;
+}
 
+.contact-info h3{
+  color: var(--clr-white);
+}
 
+.contact-info p{
+  color: var(--clr-primary-9);
+}
 
+.contact-user form input{
+  text-transform: capitalize;
+  letter-spacing: var(--spacing);
+  padding: 0.6rem 0.5rem;
+  font-size: 0.75rem;
+  color: var(--clr-grey-5);
+}
 
+.contact-form-btn{
+  text-transform: uppercase;
+  letter-spacing: var(--spacing);
+  padding: 0.5rem 1rem;
+  background: var(--clr-primary-7);
+  color: #000;
+}
 
-
-
-
-
-
-
+@media screen and (min-width: 1080px) {
+  .contact-center{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
 
 
 
