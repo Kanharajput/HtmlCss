@@ -331,9 +331,8 @@ Service Styles
 }
 
 .service{
-  max-width: 25rem;
   padding:2rem;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 
 
@@ -355,11 +354,45 @@ Service Styles
   padding: 1rem;
 }
 
-@media screen and (min-width: 500px){
+@media screen and (min-width: 768px){
   .all-services{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     /* here we don't need to add flex-basis as we manually set max-width for service */
+  }
+
+  .service{
+    flex: 0 0 45%;
+  }
+}
+
+@media screen and (min-width: 992px){
+  /* already all-service is flex after 768px */
+  .service{
+    flex: 0 0 33%;
+  }
+}
+
+@media screen and (min-width: 1170px){
+  .service{
+    display:flex;
+    text-align: left;
+  }
+
+  .service-icon{
+    align-self: start;
+
+  }
+  
+  .service-info{
+    align-self: start;
+    margin:0;
+    margin-left:0.5rem;
+  }
+
+  .service-section-center{
+    width: 95vw;
   }
 }
 /*
@@ -459,7 +492,7 @@ Tour Styles
   } 
 }
 
-@media screen and (min-width: 1396px){
+@media screen and (min-width: 1170px){
   .tours{
     width: 95vw;
     margin: 0 auto;
