@@ -529,21 +529,32 @@ START OF CONTACT
 .contact-info p{
   color: var(--clr-primary-9);
 }
+/* form by default not inherit font settigs, so apply them manually */
+.contact-form {
+  font-family: var(--ff-primary);
+  display: flex;
+  justify-content: start;
+}
 
-.contact-user form input{
+.contact-form input{
   text-transform: capitalize;
   letter-spacing: var(--spacing);
   padding: 0.6rem 0.5rem;
   font-size: 0.75rem;
   color: var(--clr-grey-5);
+  /* grow as much it want but not cross max-width */
+  flex: 1 1 auto;
+  max-width: 30rem;
 }
 
 .contact-form-btn{
   text-transform: uppercase;
   letter-spacing: var(--spacing);
+  margin-left: 0.5rem;
   padding: 0.5rem 1rem;
   background: var(--clr-primary-7);
   color: #000;
+  font-family: var(--ff-primary);
 }
 
 @media screen and (min-width: 1080px) {
