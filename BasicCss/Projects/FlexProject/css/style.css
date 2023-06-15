@@ -307,6 +307,12 @@ End of About Styles
 ===============
 */
 
+/*
+=============== 
+Service Styles
+===============
+*/
+
 .services-section{
   margin: 4rem 0;
   background: var(--clr-grey-10);
@@ -356,13 +362,113 @@ End of About Styles
     /* here we don't need to add flex-basis as we manually set max-width for service */
   }
 }
+/*
+=============== 
+End of Service Styles
+===============
+*/
+/*
+=============== 
+Tour Styles
+===============
+*/
 
+.tour-section{
+  background: var(--clr-white);
+  margin: 4rem 0;
+}
 
+.tour-section-title{
+  margin-bottom: 4rem;
+  text-align: center;
+  text-transform: uppercase;
+}
 
+.tour-section-title span{
+  color: var(--clr-primary-5);
+}
 
+.tours{
+  width: 85vw;
+  margin: 0 auto;
+}
 
+.tour{
+  background: var(--clr-grey-10);
+  margin-bottom:2rem;
+  box-shadow: var(--light-shadow);
+  transition: var(--transition);
+}
 
+.tour:hover{
+  transform: scale(1.02);
+  box-shadow: var(--dark-shadow);
+}
 
+.tour-image{
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.tour .date{
+  position:absolute;
+  font-size:1rem;
+  color: var(--clr-primary-1);
+  background: var(--clr-primary-8);
+  right:0;
+  bottom:0;
+  padding:0.5rem;
+  margin:0;
+}
+
+.tour-content{
+  max-width:90%;
+  margin:0 auto;
+}
+
+.tour-info{
+  font-size:1rem;
+}
+
+.tour-footer{
+  display:flex;
+  justify-content: space-between;
+  font-size: 1rem;
+}
+
+.tour-footer p{
+  color: var(--clr-primary-5);
+}
+
+.tour-btn{
+  display: block;
+  padding: 0.8rem 1rem; 
+  margin: 0 auto;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 992px){
+  .tours{
+    border: 2px green solid;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .tour{
+    flex: 0 0 calc(50% - 2rem);
+  } 
+}
+
+@media screen and (min-width: 1396px){
+  .tours{
+    width: 95vw;
+    margin: 0 auto;
+  }
+
+  .tour{
+    flex: 0 0 calc(33.3% - 2rem);
+  }
+}
 
 
 
