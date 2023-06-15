@@ -574,6 +574,11 @@ End OF CONTACT
 START OF GALLARY
 ==================
  */
+ .gallary-section{
+  background: var(--clr-white);
+  /* margin-bottom:4rem; */
+ }
+
 .gallary-img-container{
   background: var(--clr-primary-5);
   transition: var(--transition);
@@ -602,9 +607,26 @@ START OF GALLARY
 }
 
 
+@media screen and (min-width: 768px){
+  .gallary-images-container{
+    display: flex;
+    flex-wrap: wrap;
+  }
 
- /* 
+  .gallary-img-container{
+    /* two column layout so 1 container width is 50% without any margin */
+    flex: 0 0 50%;
+  }
+}
+
+@media screen and (min-width: 992px){
+  .gallary-img-container{
+    /* 4 column layout so 1 container width is 25% without any margin */
+    flex: 0 0 25%;
+  }
+}
+ /*   
 =================
-END OF CONTACT
+END OF GALLARY
 ==================
  */
