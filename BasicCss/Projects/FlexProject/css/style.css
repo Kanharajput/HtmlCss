@@ -512,10 +512,9 @@ END OF TOUR
 START OF CONTACT
 ==================
  */
-.contact-section{
-  background: var(--clr-primary-5);
-  margin-bottom: 4rem;
-}
+ .contact-section{
+   background: var(--clr-primary-5);
+  }
 
 .contact-center{
   margin-left: 1.5rem;
@@ -564,22 +563,48 @@ START OF CONTACT
     justify-content: space-evenly;
   }
 }
+/* 
+=================
+End OF CONTACT
+==================
+ */
+
+/* 
+=================
+START OF GALLARY
+==================
+ */
+.gallary-img-container{
+  background: var(--clr-primary-5);
+  transition: var(--transition);
+  position: relative;
+}
+
+/* actions to perform when hover over img-container */
+.gallary-img-container:hover img{
+  opacity: 0.5;
+}
+
+.gallary-img-container:hover .search-icon{
+  opacity:1;
+}
+
+.gallary-img-container .search-icon
+{
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  font-size: 2rem;
+  color: var(--clr-white);
+  /* by default hide the search icon */
+  opacity: 0;
+}
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ /* 
+=================
+END OF CONTACT
+==================
+ */
