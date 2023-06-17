@@ -71,7 +71,8 @@ ul {
 a {
   text-decoration: none;
 }
-img {
+/* all img has below style except nav-header img */
+img:not(.nav-header img) {
   width: 100%;
   display: block;
 }
@@ -154,6 +155,76 @@ p {
 =============== 
 End of Global Styles
 ===============
+*/
+/*
+======================
+Start of NavBar styles
+======================
+*/
+
+.navbar{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: var(--clr-white);
+  z-index: 2;
+  box-shadow: var(--dark-shadow);
+}
+
+.nav-center{
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.nav-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.nav-toggle{
+  color: var(--clr-primary-5);
+  font-size: 1.5rem;
+  background: var(--clr-white);
+  border: none;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.nav-toggle:hover{
+  transform: scale(1.2);
+}
+
+.nav-link{
+  display: block;
+  font-size: 1rem;
+  padding:1rem 2rem;
+  color: var(--clr-primary-1);
+  transition: var(--transition);
+  cursor: pointer;
+  letter-spacing: var(--spacing);
+}
+
+.nav-link:hover{
+  background: var(--clr-primary-8);
+  /* translate right more then padding then only translation is seen */
+  /* transform: translate(2.2rem); whole link will translate*/
+  /* only slide the text */
+  padding-left: 2.2rem;
+}
+
+/* hide icons on small screen */
+.nav-icons{
+  display:none;
+}
+
+/*
+======================
+End of NavBar styles
+======================
 */
 
 /*
