@@ -28,11 +28,11 @@
             <!-- nav links -->
             <ul class="nav-links" id="nav-links">
                 <!-- single link -->
-                <li><a href="#" class="nav-link scroll-link">Home</a></li>
-                <li><a href="#" class="nav-link scroll-link">About</a></li>
-                <li><a href="#" class="nav-link scroll-link">Services</a></li>
-                <li><a href="#" class="nav-link scroll-link">Featured</a></li>
-                <li><a href="#" class="nav-link scroll-link">Gallery</a></li>
+                <li><a href="#home" class="nav-link scroll-link">Home</a></li>
+                <li><a href="#about" class="nav-link scroll-link">About</a></li>
+                <li><a href="#services" class="nav-link scroll-link">Services</a></li>
+                <li><a href="#featured" class="nav-link scroll-link">Featured</a></li>
+                <li><a href="#gallary" class="nav-link scroll-link">Gallery</a></li>
             </ul>
             <!-- end of nav-links -->
             <!-- nav-icons -->
@@ -63,7 +63,8 @@
     </nav>
     <!-- end of navbar -->
     <!-- start of header  -->
-    <header>
+    <!-- adding ids to sections so that we can slide to a section by clicking in navbar-->
+    <header id="home">
         <article class="banner">
             <div class="banner-text">
                 <h1>continue exploring</h1>
@@ -75,7 +76,7 @@
     <!-- end of header -->
 
     <!-- start of about us -->
-    <section class="about-section"> 
+    <section class="about-section" id="about"> 
         <article class="section-center">
             <h1 class="heading">about <span>us</span></h1>
             <div class="about-content">
@@ -94,7 +95,7 @@
     <!-- end of about us -->
     
     <!-- start of services -->
-    <section class="services-section">
+    <section class="services-section" id="services">
         <article class="service-section-center">
             <div class="service-heading">
                <h1>OUR <span>SERVICES</span> </h1>
@@ -130,7 +131,7 @@
     <!-- End of service section -->
     
     <!-- Start of tours section -->
-    <section class="tour-section">
+    <section class="tour-section" id="featured">
         <div class="tour-section-title">
             <h1>FEATURED <span>TOURS</span> </h1>
         </div>
@@ -247,7 +248,7 @@
     </section>
     <!-- end of contact section -->
     <!-- start of  gallery section -->
-    <section class="gallery-section">
+    <section class="gallery-section" id="gallary">
         <article class="gallery-images-container">
             <div class="gallery-img-container">
                 <img src="./images/tour-5.jpeg" alt="tour5">
