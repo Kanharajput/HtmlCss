@@ -237,6 +237,55 @@ Start of NavBar styles
   display:none;
 }
 
+@media screen and (min-width: 992px){
+  .nav-toggle{
+    display: none;
+  }
+
+  .nav-center{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .nav-links{
+    /* automatically decide height according to container height */
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .nav-link{
+    margin-right: 0.5rem;
+    padding: 0;
+  }
+  
+  .nav-link:hover{
+    background:none;
+    color: var(--clr-primary-5);
+    cursor: pointer;
+    padding: 0;
+  }
+
+  .nav-icons{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 0.5rem;
+  }
+
+  .nav-icon{
+    margin-right: 0.5rem;
+    font-size: 1.3rem;
+    color: var(--clr-primary-5);
+  }
+  .nav-icon:hover{
+    color: var(--clr-primary-1);
+  }
+}
+
+
+
 /*
 ======================
 End of NavBar styles
