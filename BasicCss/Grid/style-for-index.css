@@ -12,10 +12,26 @@ body{
 }
 .cell{
     background: rgb(211, 208, 208);
-    border: 3px red solid;
+    border: 3px white solid;
     padding: 2rem;
     text-align: center;
     font-size: 1rem;
     text-transform: uppercase;
     color: white;
+}
+
+.cell-1{
+    background: yellow;    
+}
+.cell-2{
+    background: red;    
+}
+.cell-3{
+    background: green;    
+}
+.cell-4{
+    background: orange;    
+}
+.cell-5{
+    background: pink;    
 }
