@@ -216,6 +216,22 @@ Start of NavBar styles
   padding-left: 2.2rem;
 }
 
+
+.nav-links {
+  /* by default hide the nav-links */
+  height:0;
+  /* text overflow after height 0 so hide it */
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+/* In tea station project we used translate method to translate the whole links totally to the left and translate back to 0(where they actually situated) when user clicks on menu button. But here links are spreaded to whole screen so it's not optimistic to translate to left, instead of this we remove the height of links and provide them height when user clicked on menu button  */
+.show-nav-links{
+  /* this class is added to nav-links class's element using javascript when user click on nav-toggle(menu-button) */
+  /* find out the nav-links height using inspect */
+  height:280px;
+}
+
 /* hide icons on small screen */
 .nav-icons{
   display:none;
