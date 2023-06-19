@@ -13,14 +13,21 @@
       }
 
       .container{
-          height: 500px;
           display: grid;
           /* check previous commits to know what happened till now */
-          /* minmax : not let the column size below 200px and more than 200px it will take 1 fr */
-          grid-template-columns: 1fr minmax(200px, 1fr) 1fr;
-          grid-template-rows: repeat(3, 100px);
-          /* row and column respectively */
-          gap: 10px;
+          /* autofit and autofill are used when we don't know the fix number of columns and rows */
+          /* we can see the difference in auto-fit and auto-fill when we have items we can only set in a single row */
+          /* auto fit : if space remains it grows and equally divide the whole space  */
+          grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+          /* gap: 10px; */
+      }
+
+      .container-1{
+          display: grid;
+          /* check previous commits to know what happened till now */
+          /* auto fill : it won't grow if space remains,it just create empty cells in remaining space which we can using developer tools */
+          grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+          /* gap: 10px; */
       }
     </style>
   </head>
@@ -28,15 +35,19 @@
     <div class="img-container">
       <img src="grid-concepts.svg" alt="grid image">
     </div>
+    <h1>AUTO-FIT PROPERTY IS SHOWN BY BELOW CONTAINER</h1>
     <div class="container">
       <div class="cell cell-1">cell 1</div>
       <div class="cell cell-2">cell 2</div>
       <div class="cell cell-3">cell 3</div>
       <div class="cell cell-4">cell 4</div>
-      <div class="cell cell-5">cell 5</div>
-      <div class="cell cell-6">cell 6</div>
-      <div class="cell cell-7">cell 7</div>
-      <div class="cell cell-8">cell 8</div>
+    </div>
+    <h1>AUTO-FILL PROPERTY IS SHOWN BY BELOW CONTAINER</h1>
+    <div class="container-1">
+      <div class="cell cell-1">cell 1</div>
+      <div class="cell cell-2">cell 2</div>
+      <div class="cell cell-3">cell 3</div>
+      <div class="cell cell-4">cell 4</div>
     </div>
   </body>
   </html> 
