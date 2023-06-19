@@ -16,8 +16,10 @@
           height: 500px;
           display: grid;
           /* check previous commits to know what happened till now */
-          grid-template-columns: 100px 100px 100px;
-          grid-template-rows: 100px 100px 100px;
+          /* naming the rows and column lines there's no collision if
+           row and column has the same name */
+          grid-template-columns: [start]100px 100px 100px[end];
+          grid-template-rows: [start]100px 100px 100px[end];
           /* row and column respectively */
           gap: 30px 50px;
           /* bottom is not visible that'swhy added margin */
@@ -25,26 +27,19 @@
       }
 
       .cell-1{
-        /* grid lines - see the image above to check the grid lines
-          using grid lines boxes can cover up the space of as many blocks as it want  */
-        grid-column-start: 1;
-        grid-column-end: 3;
-        /* shorthand */
-        grid-column: 1/3;
+        grid-column: start/end;
       }
-
 
       .cell-2{
-        /* use it's permanent line where it located as a start line */
-        grid-row-start: 2;
-        grid-row-end: 5;
+        /* use name and line number vice versa */
+        grid-row: 2/end;
       }
 
-      /* grid lines are only for implicit cells not for explicit */
-      .cell-6{
-        grid-row: 3/5;
+      .cell-3{
+        /* reverse count from last column which is explicitly declared 
+        to first column */
+        grid-column: 2/-1;
       }
-
     </style>
   </head>
   <body>
