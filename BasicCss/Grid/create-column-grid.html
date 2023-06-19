@@ -13,9 +13,9 @@
             display: grid;
             /* check previous commits to know what happened till now */
             grid-template-columns: 5rem auto 80%;
-            /* So here row's value signifies box height */
-            /* auto provide the remaining space when boxes are smaller height is smaller then container and shrink the boxes to their smallest height when there's not enough space. */
-            grid-template-rows: 15rem auto 20% ;
+            /* fractional values. This depends on screen size and their siblings values */
+            /* like here third column will take 2fraction space of the space and 1-1 is acquired by 1st and second column */
+            grid-template-rows: 1fr 1fr 2fr;
         }
     </style>
   </head>
