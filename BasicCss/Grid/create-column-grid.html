@@ -16,27 +16,14 @@
           height: 500px;
           display: grid;
           /* check previous commits to know what happened till now */
-          grid-template-columns: 100px 100px 100px;
-          grid-template-rows: 100px 100px 100px;
+          /* use repeat function if value for different column is same */
+          /* first parameter is declare how many times we want to repeat this value and second is the value */
+          grid-template-columns: repeat(3, 1fr);
+          grid-template-rows: repeat(3, 100px);
           /* row and column respectively */
           gap: 30px 50px;
           /* bottom is not visible that'swhy added margin */
           margin-bottom: 50px;
-      }
-      /* cell order like we did in flex */
-      /* by default has order value equal to 0 
-      highest order value cell will set at the last*/
-      .cell-3{
-        order: -1;
-      }
-      .cell-4{
-        order: 1;
-      }
-      .cell-5{
-        order: 2;
-      }
-      .cell-2{
-        order: 3;
       }
     </style>
   </head>
