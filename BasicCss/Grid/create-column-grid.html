@@ -13,9 +13,15 @@
             display: grid;
             /* check previous commits to know what happened till now */
             grid-template-columns: 5rem auto 80%;
-            /* fractional values. This depends on screen size and their siblings values */
-            /* like here third column will take 2fraction space of the space and 1-1 is acquired by 1st and second column */
             grid-template-rows: 1fr 1fr 2fr;
+            /* gap between the columns */
+            column-gap: 20px;
+            /* gap between the row */
+            row-gap: 30px;
+            /* shorthand */
+            gap: 40px;
+            /* row and column respectively */
+            gap: 30px 50px;
         }
     </style>
   </head>
