@@ -13,7 +13,9 @@
             /* 200px is the first column size and 300px is for second column */
             /* this is called implicit grid as here we say one column is 200px and one is 300px
             so after adding 10 or 100 cell grid fits everything in two column layout with mainting size also */
-            grid-template-columns: 200px 300px;
+            /* all units are supported */
+            /* auto is responsive change width according to screen size */
+            grid-template-columns: 5rem 20% auto;
         }
     </style>
   </head>
@@ -24,6 +26,9 @@
       <div class="cell cell-3">cell 3</div>
       <div class="cell cell-4">cell 4</div>
       <div class="cell cell-5">cell 5</div>
+      <div class="cell cell-3">cell 6</div>
+      <div class="cell cell-4">cell 7</div>
+      <div class="cell cell-5">cell 8</div>
     </div>
   </body>
   </html> 
