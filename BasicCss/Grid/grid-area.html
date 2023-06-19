@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Grid Area</title>
+    <link rel="stylesheet" href="style-for-index.css" />
+    <style>
+      .img-container img{
+        width: 800px;
+        height: 600px;
+      }
+
+      .container{
+          display: grid;
+          /* check previous commits to know what happened till now */
+          /* gap row and column respectively */
+          gap: 30px 50px;
+          /* bottom is not visible that'swhy added margin */
+          margin-bottom: 50px;
+          
+          /* to use grid area first decide how many rows and column will gonna be have 
+          and what layout you wnat to create*/
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-rows: 100px 100px 100px 100px 100px;
+
+          /* here characters signifies columns */
+          /* and curly bracket signifies rows */
+          grid-template-areas: 
+          "a a b"
+          "a a b"
+          "c c b"
+          "d d d"
+          "e f f";
+      }
+
+      /* cell 1 takes the whole area of a that is 2 column 2 row */
+      .cell-1{
+        grid-area: a;
+      }
+      .cell-2{
+        grid-area: b;
+      }
+      .cell-3{
+        grid-area: c;
+      }
+      .cell-4{
+        grid-area: d;
+      }
+      .cell-5{
+        grid-area: e;
+      }
+      .cell-6{
+        grid-area: f;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="img-container">
+      <img src="grid-concepts.svg" alt="grid image">
+    </div>
+    <div class="container">
+      <div class="cell cell-1">cell 1</div>
+      <div class="cell cell-2">cell 2</div>
+      <div class="cell cell-3">cell 3</div>
+      <div class="cell cell-4">cell 4</div>
+      <div class="cell cell-5">cell 5</div>
+      <div class="cell cell-6">cell 6</div>
+    </div>
+  </body>
+  </html> 
