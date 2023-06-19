@@ -16,29 +16,27 @@
           height: 500px;
           display: grid;
           /* check previous commits to know what happened till now */
-          /* naming the rows and column lines there's no collision if
-           row and column has the same name */
-          grid-template-columns: [start]100px 100px 100px[end];
-          grid-template-rows: [start]100px 100px 100px[end];
+          grid-template-columns: 100px 100px 100px;
+          grid-template-rows: 100px 100px 100px;
           /* row and column respectively */
           gap: 30px 50px;
           /* bottom is not visible that'swhy added margin */
           margin-bottom: 50px;
       }
-
-      .cell-1{
-        grid-column: start/end;
-      }
-
-      .cell-2{
-        /* use name and line number vice versa */
-        grid-row: 2/end;
-      }
-
+      /* cell order like we did in flex */
+      /* by default has order value equal to 0 
+      highest order value cell will set at the last*/
       .cell-3{
-        /* reverse count from last column which is explicitly declared 
-        to first column */
-        grid-column: 2/-1;
+        order: -1;
+      }
+      .cell-4{
+        order: 1;
+      }
+      .cell-5{
+        order: 2;
+      }
+      .cell-2{
+        order: 3;
       }
     </style>
   </head>
