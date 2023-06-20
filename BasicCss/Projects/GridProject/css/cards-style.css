@@ -107,6 +107,14 @@ Cards Styles
     margin-bottom: 2rem;
 }
 
+/* if paragraph has more data then cards paragraph then they don't look like as  of now, so */
+.card{
+  display: grid;
+  grid-template-columns: 1fr;
+  /* first auto is for img container , take as much value as it want. second 1fr is for paragraph take as much as it can and the third is for the footer. after setting all cards are stretched according to greatest paragraph data */
+  grid-template-rows: auto 1fr auto;
+}
+
 .card .img-container img{
   height: 300px;
 }
