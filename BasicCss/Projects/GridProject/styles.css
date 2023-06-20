@@ -76,3 +76,54 @@ p {
 End of Global Styles
 =====================
 */
+/* 
+================
+Navbar Styles
+================
+*/
+.navbar-section{
+  background: var(--darkGrey);
+}
+
+.navbar-list{
+  padding-left: 2rem;
+}
+
+.navbar-list ul{
+  list-style-type: none;
+}
+
+.list-item a{
+  display: block;
+  letter-spacing: var(--mainSpacing);
+  color: var(--primaryColor);
+  padding: 1rem;
+  transition: var(--mainTransition);
+}
+
+.list-item a:hover{
+  color: var(--mainBlack);
+}
+
+@media screen and (min-width: 992px){
+  .navbar-list ul{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+  }
+
+  .navbar-list{
+    padding-left: 0;
+  }
+
+  .navbar-list{
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+}
+
+/* 
+================
+End of Navbar Styles
+================
+*/
