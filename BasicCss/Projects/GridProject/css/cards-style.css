@@ -96,13 +96,19 @@ Cards Styles
 }
 
 .cards{
-    width: 80vw;
+    width: 90vw;
+    max-width: 1170px;
     margin: 0 auto;
+    /* different layouts code is at last */
 }
 
 .card{
     border: 1px solid var(--darkGrey);
     margin-bottom: 2rem;
+}
+
+.card .img-container img{
+  height: 300px;
 }
 
 .card-text{
@@ -118,7 +124,7 @@ Cards Styles
     background:var(--darkGrey);
     color: var(--primaryColor);
 }
-
+/* 
 @media screen and (min-width: 768px){
   .cards{
       display: grid;
@@ -135,6 +141,36 @@ Cards Styles
   .cards{
       grid-template-columns: repeat(3, 1fr);
   }
+} */
+
+/* USING AUTOFIT AND AUTOFILL
+  To use autofill and autofit find out three things 
+  1. max-width of the container in which we want to create columns.
+  2. find out the total gap of all columns in a row.
+  3. decide how many columns you want in a row when screen size is 
+      equal to max-width.
+    
+      sizeof oneColumn : (max-width - totalGap)/totalColumns;
+
+      Now , 
+      grid-template-columns: repeat(autofill/autofit, minmax(oneColumn, 1fr)
+
+      so now when screen size is max it only creates no. of columns that you decided and below that screen size all columns take 1 fr of screen size.
+      And in minmax we pass the minimum column size at max screen size which we finded using formula and another parameter show what to do when screen is not max-width.
+*/
+
+/* create different columns layout for different size without any media query 
+    max-width = 1170px 
+    columns = 3 
+    gap = 2 
+    2 gap in three column 1 gap equal to 2 rem so total 64px 
+    (1170 - 64)/3 = 368px */
+.cards{
+  display: grid;
+  column-gap: 2rem;
+  /* if there's space remains then auto-fit share that space to the present card
+  But in auto-fill present card not take the empty space. They only acquire their alloted space */
+  grid-template-columns: repeat(auto-fill, minmax(368px, 1fr));
 }
 
 
