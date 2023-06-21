@@ -162,11 +162,52 @@ Layout Styles
 }
 
 @media screen and (min-width: 992px){
-  .layout-for-992px{
+  .layout-main{
+    height: 100vh;
     display: grid;
-    grid-template-columns: 180px 1fr 50px;
+    /* so we want three columns and three rows */
+    grid-template-columns: [start]180px[col-1-end] 1fr[col-2-end] 50px[end];
+    grid-template-rows: [row-start]auto[row-1-end] 1fr[row-2-end] auto[row-end];
   }
 
+  .layout-title{
+    grid-column: start/end;
+    grid-row: row-start/row-1-end;
+  }
+
+  .layout-navbar-list{
+    grid-column: start/col-1-end;
+    grid-row: row-start/row-end;
+  }
+
+  .layout-text{
+    grid-column: col-1-end/col-2-end;
+    grid-row: row-1-end/row-2-end;
+  }
+
+  .layout-connect{
+    grid-column: col-2-end/end;
+    grid-row: row-1-end/row-end;
+  }
+
+  .layout-footer{
+    grid-column: start/end;
+    grid-row: row-2-end/row-end;
+  }
+
+  .layout-navbar-list{
+    height: 100%;
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
+  
+  .layout-connect{
+    background: var(--darkGrey);
+    height: 100%;
+    grid-template-columns: 1fr;
+
+
+/* 
   .layout-content{
     display: grid;
     height: 100vh;
@@ -186,5 +227,5 @@ Layout Styles
     grid-template-rows: repeat(4,1fr);
     justify-items: center;
     align-items:center;
-  }
-}
+  } */
+} 
