@@ -99,6 +99,72 @@ Tiles Styles
 }
 
 .tile{
+    /* for single tile layout    */
     margin-bottom: 2rem;
 }
 
+@media screen and (min-width: 768px){
+    .tiles{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 2rem;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .tiles{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+@media screen and (min-width: 1170px){
+    .tiles{
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(5, 200px);
+        gap: 2rem;
+        grid-template-areas: 
+        "a a a b"
+        "a a a c"
+        "d d d d"
+        "e f f f"
+        "e g h i";
+    }
+
+    .tile img{
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .tile{
+        /* for single tile layout    */
+        margin-bottom: 0;
+    }
+
+    .tile-1{
+        grid-area: a;
+    }
+    .tile-2{
+        grid-area: b;
+    }
+    .tile-3{
+        grid-area: c;
+    }
+    .tile-4{
+        grid-area: d;
+    }
+    .tile-5{
+        grid-area: e;
+    }
+    .tile-6{
+        grid-area: f;
+    }
+    .tile-7{
+        grid-area: g;
+    }
+    .tile-8{
+        grid-area: h;
+    }
+    .tile-9{
+        grid-area: i;
+    }
+}
