@@ -71,18 +71,46 @@ img:not(.blog-author-img-container img){
 }
 
 .blog{
+    position: relative;
+    width: 100%;
+    height: 26rem;
     margin-bottom: 2rem;
-    transition: all linear 0.3s;
+    /* it maintain the size of blocks at a time of hovering. use larger for values for it.or you can understand it like z-axis on which card which flip */
+    perspective: 1500px;
 }
 
-.blog:hover{
-    transform: scale(1.03);
+.blog-side{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all linear 2s;
+    /* add it to hide back side by front side*/
+    backface-visibility: hidden;
 }
-
 
 .blog-front{
     background: var(--clr-primary1);
     border-radius: 0.875rem;
+}
+
+.blog-back{
+    background: var(--clr-primary1);
+    /* center it's content */
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    /* rotate property */
+    transform: rotateY(-180deg);
+}
+
+.blog:hover .blog-front{
+    transform: rotateY(180deg);
+}
+
+.blog:hover .blog-back{
+    transform: rotateY(0);
 }
 
 .blog-img-container img{
@@ -130,6 +158,26 @@ img:not(.blog-author-img-container img){
     border-radius: 2rem;
     object-fit: center;
 }
+
+
+/* blog back designs */
+.blog-back button{
+    display: inline-block;
+    background: transparent;
+    border-color: var(--clr-primary5);
+    color: var(--clr-primary5);
+    padding: 0.75rem 1rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    background: white;
+    transition: all linear 0.3s;
+}
+
+.blog-back button:hover{
+    background: var(--clr-primary5);
+    color: white;
+}
+
 
 /* 2 column layout */
 @media screen and (min-width: 768px){
