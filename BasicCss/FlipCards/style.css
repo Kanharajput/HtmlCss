@@ -1,0 +1,15 @@
+/* Global styles */
+:root{
+    --clr-primary1: #f5e7fd;
+    --clr-primary2: #e0b7fa;
+    --clr-primary5: #a328f1;
+    --clr-primary9: #2e0548;
+    --clr-primary9: #0f0218;
+
+    --secondary: gray;
+}
+
+img:not(.blog-author-img-container img){
+    display: block;
+    width: 100vw;
+}
