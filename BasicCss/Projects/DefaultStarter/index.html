@@ -35,6 +35,31 @@
     <br><br>
     <div class="alert alert-danger">Hello from danger</div>
     <br>
-    <div class="alert alert-success">Hello from success</div>
+    <div class="alert alert-success">Hello from success</div>   
+    <form class="form">
+        <h4>Contact Form</h4>
+        <!-- input name -->
+        <div class="form-row">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" name="name"  class= "form-input" placeholder="Enter your name">
+        </div>
+        <!-- input email -->    
+        <div class="form-row">
+            <label for="email" class="form-label">Email</label>
+            <input type="emial" name="email"  class= "form-input" placeholder="Email">
+        </div>
+        <!-- input number -->
+        <div class="form-row">
+            <label for="number" class="form-label">Number</label>
+            <input type="number" name="number"  class= "form-input" placeholder="Number">
+            <small class="email-alert">Please enter valid email.</small>
+        </div>
+        <!-- text-area -->
+        <div class="form-row">
+            <label for="textarea" class="form-label">Description</label>
+            <textarea name="textarea" rows="5" class="form-input"></textarea>
+        </div>
+        <button type="submit" class="btn btn-full-width">Submit</button>
+    </form>
 </body>
 </html>
