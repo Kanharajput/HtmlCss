@@ -36,8 +36,18 @@ html {font-size: 100%;} /*16px*/
   --primary-800: #5d4a44;
   --primary-900: #2e2522;
 
+  --gray-50 : #f9fafb;
+  --gray-100: #f1f5f9;
+  --gray-200: #e2e8f0;
+  --gray-300: #cbd5e1;
+  --gray-400: #94a3b8;
+  --gray-500: #64748b;
+  --gray-600: #475569;
+  --gray-700: #334155;
+  --gray-800: #1e293b;
+  --gray-900: #0f172a;
+  --gray-950: #020617;
 
-  /* some fixed colors, every project needs this */
   --black: #222;
   --white: #fff;
   /* red green for alert */
@@ -45,6 +55,9 @@ html {font-size: 100%;} /*16px*/
   --red-dark: #842029;
   --green-light: #d1e7dd;
   --green-dark: #0f5132;
+  /* color for bg and text */
+  --bg-color: var(--gray-100);
+  --text-color: var(--gray-500);
 
 }
 
@@ -56,10 +69,11 @@ html {font-size: 100%;} /*16px*/
 }
 
 body {
-  background: white;
+  background: var(--bg-color);
   font-family: var(--body-font);
   font-weight: 400;
   line-height: 1.75;
+  color: var(--text-color);
 }
 
 p {
