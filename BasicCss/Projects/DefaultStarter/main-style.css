@@ -127,3 +127,22 @@ ul {
   list-style-type: none;
   padding: 0;
 }
+
+
+.img-container{
+  width: 50vw;
+  border: 2px solid var(--primary-500);
+  border-radius: var(--border-radius);
+  max-width: var(--max-width);
+}
+
+/* 
+remove logo from the selected img element 
+img:not(.class-name)
+*/
+img{
+  display: block;
+  width: 100%;
+  /* to maintain the aspect ratio */
+  object-fit: cover;
+}
