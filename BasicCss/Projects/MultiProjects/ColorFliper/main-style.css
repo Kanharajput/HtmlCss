@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400|Josefin+Slab:600');
+
+/* add this code, normalize also don't has it */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+html {font-size: 100%;} /*16px*/
+
+:root{
+    /* font */
+    --heading-font: 'Josefin Slab',serif;
+    --body-font: 'Josefin Sans',sans-serif;
+    --small-text: 0.875rem;
+    --extra-small-text: 0.7em;
+    /* colors */
+    /* select the color from happyhues or coolors and then generate shades from shadowloard */
+    --primary-100: #d1e7dd;
+    --primary-200: #a3cfbb;
+    --primary-300: #75b798;
+    --primary-400: #479f76;
+    --primary-500: #198754;
+    --primary-600: #146c43;
+    --primary-700: #0f5132;
+    --primary-800: #0a3622;
+    --primary-900: #051b11;
+
+    --gray-50 : #f9fafb;
+    --gray-100: #f1f5f9;
+    --gray-200: #e2e8f0;
+    --gray-300: #cbd5e1;
+    --gray-400: #94a3b8;
+    --gray-500: #64748b;
+    --gray-600: #475569;
+    --gray-700: #334155;
+    --gray-800: #1e293b;
+    --gray-900: #0f172a;
+    --gray-950: #020617;
+
+    --black: #222;
+    --white: #fff;
+
+    /* red green for alert */
+    --red-light: #f8d7da;
+    --red-dark: #842029;
+    --green-light: #d1e7dd;
+    --green-dark: #0f5132;
+    
+    /* color for bg and text */
+    --bg-color: var(--gray-100);
+    --text-color: var(--gray-500);
+    --border-radius: 0.25rem;
+    --letter-spacing: 1px;
+    --transition: all 0.3s ease-in-out;
+    --max-width: 1170px;
+    /* for cards and forms */
+    --fixed-width: 600px; 
+
+    --shadow-1: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    --shadow-2: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --shadow-3: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    --shadow-4: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+  
+  /* normalize don't add this code */
+::after, ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    background: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.75;
+    color: #000000;
+    letter-spacing: var(--letter-spacing);
+}
+  
+p {
+    margin-bottom: 1rem;
+    /* paragraphs are not liked when 
+    they are stretched to full width */
+    max-width: 40em;       
+}
+  
+h1, h2, h3, h4, h5 {
+    margin-bottom: 1rem;
+    font-family: var(--heading-font);
+    font-weight: 600;
+    line-height: 1.3;
+    color: var(--black);
+}
+  
+h1 {font-size: 3.052rem;}
+  
+h2 {font-size: 2.441rem;}
+  
+h3 {font-size: 1.953rem;}
+  
+h4 {font-size: 1.563rem;}
+  
+h5 {font-size: 1.25rem;}
+  
+small, .small-text {font-size: var(--small-text);}
+  
+a {
+    text-decoration: none;
+}
+  
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.img-container{
+    width: 50vw;
+    border: 2px solid var(--primary-500);
+    border-radius: var(--border-radius);
+    max-width: var(--max-width);
+}
+
+img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+  
+.btn{
+    display: inline-block;
+    margin-top: 2rem;
+    cursor: pointer;
+    background: var(--primary-500);
+    color: var(--white);
+    padding: 0.375rem 0.75rem;
+    border: transparent;
+    transition: var(--transition);
+    letter-spacing: var(--letter-spacing);
+    text-transform: capitalize;
+    box-shadow: var(--shadow-1);
+}
+  
+.btn:hover{
+    box-shadow: var(--shadow-3);
+}
+  
+.btn-hipster{
+    background: var(--primary-100);
+    color: var(--primary-700);
+}
+  
+.btn-hipster:hover{
+    color: var(--primary-100);
+    background: var(--primary-700);
+}
+  
+.btn-full-width{
+    width: 100%;
+    display: block;
+}
