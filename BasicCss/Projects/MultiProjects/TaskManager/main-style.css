@@ -1,0 +1,93 @@
+@import url("../normalize.css");
+@import url("../global.css");
+
+.task-manager-section{
+    height: 100vh;
+    background: var(--clr-bg);
+    display: grid;
+    align-content: center;
+}
+
+.task-manager{
+    width: 90%;
+    max-width: var(--fixed-width);
+    margin: 0 auto;
+    background: var(--clr-white);
+    box-shadow: var(--shadow-2);
+    padding: 2rem;
+}
+
+.task-manager h2{
+    text-align: center;
+}
+
+.task-manager input{
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    border: none;
+    background: var(--clr-bg);
+    border:2px solid var(--clr-gray-100);
+    border-radius: var(--border-radius);
+}
+
+.task-manager input::placeholder{
+    color: var(--clr-gray-500);
+}
+
+.task-btn{
+    width: 100%;
+}
+
+.task-btn:hover{
+    background: var(--clr-primary-600);
+}
+
+.alert{
+    color: var(--clr-red-dark);
+}
+
+@media screen and (min-width: 500px){
+    .task-manager form{
+        display: flex;
+    }
+
+    .task-btn{
+        width: 150px;
+        margin-top: 0;
+    }
+}
+
+/* select the loading */
+h4{
+    width: 90%;
+    max-width: var(--fixed-width);
+    margin: 1rem auto;
+}
+
+.task-lists{
+    width: 90%;
+    max-width: var(--fixed-width);
+    margin: 0 auto;
+}
+
+.list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--clr-white);
+    margin-bottom: 1rem;
+    padding: 1rem 1rem;
+    box-shadow: var(--shadow-2);
+}
+
+.list:hover{
+    box-shadow: var(--shadow-4);
+}
+
+.icon{
+    font-size: 1.1rem;
+}
+
+.del-icon{
+    color: var(--clr-red-dark);
+}

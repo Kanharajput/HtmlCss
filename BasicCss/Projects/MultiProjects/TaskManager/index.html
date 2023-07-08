@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="main-style.css">
+    <title>Task Manager</title>
+</head>
+<body>
+    <section class="task-manager-section">
+        <article class="task-manager">
+            <h2>Task Manager</h2>
+            <form action="">
+                <input type="text" placeholder="e.g wash dishes">
+                <button class="btn task-btn">Submit</button>
+            </form>
+            <small class="alert">There was an Error</small>
+        </article>
+        <h4>Loading...</h4>
+        <article class="task-lists">
+            <div class="list">
+                <h3>Task Name</h3>
+                <div class="edit-icons">
+                    <span class="icon"><i class="fa-regular fa-pen-to-square"></i></span>
+                    <span class="icon del-icon"><i class="fa-solid fa-trash"></i></span>
+                </div>
+            </div>
+            <div class="list">
+                <h3>
+                    <span class="icon"><i class="far fa-check-circle"></i></span>
+                    Task Name
+                </h3>
+                <div class="edit-icons">
+                    <span class="icon"><i class="fa-regular fa-pen-to-square"></i></span>
+                    <span class="icon del-icon"><i class="fa-solid fa-trash"></i></span>
+                </div>
+            </div>
+        </article>    
+    </section>
+</body>
+</html>

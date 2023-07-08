@@ -148,7 +148,7 @@ img {
 
 .btn {
     display: inline-block;
-    margin-top: 2rem;
+    margin-top: 1rem;
     cursor: pointer;
     background: var(--clr-primary-500);
     color: var(--clr-white);
