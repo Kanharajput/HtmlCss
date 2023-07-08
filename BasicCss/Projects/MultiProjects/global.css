@@ -87,6 +87,7 @@ p {
     /* paragraphs are not liked when 
     they are stretched to full width */
     max-width: 40em;
+    margin-bottom: 1rem;
 }
 
 h1,
@@ -134,6 +135,15 @@ ul {
     padding: 0;
 }
 
+.underline{
+    width: 4rem;
+    height: 0.2rem;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    background: var(--clr-primary-500);
+    border-radius: var(--border-radius);
+}
+
 .img-container {
     border: 2px solid var(--primary-500);
     border-radius: var(--border-radius);
@@ -165,14 +175,16 @@ img {
     box-shadow: var(--shadow-3);
 }
 
+/* write it after btn styles then only it will override 
+the btn styles otherwise btn styles will override it */
 .btn-hipster {
-    background: var(--primary-100);
-    color: var(--primary-700);
+    background: var(--clr-primary-100);
+    color: var(--clr-primary-700);
 }
 
 .btn-hipster:hover {
-    color: var(--primary-100);
-    background: var(--primary-700);
+    color: var(--clr-primary-100);
+    background: var(--clr-primary-700);
 }
 
 .btn-full-width {
