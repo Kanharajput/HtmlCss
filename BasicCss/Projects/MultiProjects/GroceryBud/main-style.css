@@ -1,0 +1,89 @@
+@import url("../normalize.css");
+@import url("../global.css");
+
+.main-section{
+    height: 100vh;
+    background: var(--clr-bg);
+    display: grid;
+    place-items: center;
+}
+
+.grocery-card{
+    width: 90vw;
+    max-width: var(--fixed-width);
+    background: var(--clr-white);
+    box-shadow: var(--shadow-2);
+    padding: 1rem 2rem;
+}
+
+.alert{
+    background: var(--clr-red-light);
+    color: var(--clr-red-dark);
+    text-align: center;
+    border-radius: var(--border-radius);
+    margin-bottom: 1rem;
+}
+
+.card-title h4{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+form {
+    display: flex;
+    margin-bottom : 2rem;
+}
+
+form input{
+    flex-basis: 90%;
+    border: 2px solid var(--clr-gray-100);
+    border-radius: var(--border-radius);
+    padding: 0.375rem 0.75rem;
+}
+
+form input::placeholder{
+    color: var(--clr-gray-500);
+}
+
+form .form-btn{
+    margin-top: 0;
+}
+
+form .form-btn:hover{
+    background: var(--clr-primary-700);
+}
+
+.product-lists{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.list h4{
+    font-size: 1rem;
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--clr-white);
+    margin-bottom: 0.5rem;
+}
+
+.icon {
+    font-size: 0.9rem;
+}
+
+.del-icon {
+    color: var(--clr-red-dark);
+}
+
+.clear-item-link{
+    text-align: center;
+    color: var(--clr-red-dark);
+}
+
+.clear-item-link a{
+    color: var(--clr-red-dark);
+}
+
