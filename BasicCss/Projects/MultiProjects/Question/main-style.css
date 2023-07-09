@@ -1,0 +1,42 @@
+@import url("../normalize.css");
+@import url("../global.css");
+
+.main-section{
+    height: 100vh;
+    background: var(--clr-bg);
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.content-section{
+    width: 100vw;
+    max-width: var(--fixed-width);
+    text-align: center;
+}
+
+.content-section h2{
+    color: var(--clr-primary-500);
+    margin-bottom: 2rem;
+    font-style: italic;
+}
+
+.card{
+    background: var(--clr-white);
+    box-shadow: var(--shadow-2);
+    margin-bottom: 1rem;
+    padding: 1rem 0.75rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card span{
+    color: var(--clr-primary-500);
+    font-size: 1.2rem;
+}
+
+.card small{
+    font-size: 1rem;
+}
+
